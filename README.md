@@ -3,7 +3,7 @@
 
 ## Info / Anleitung
 
-Es sind drei Versionen verfügbar (im Verzeichnis "/build"):
+Es sind drei Versionen verfügbar (https://dogtag.itch.io/pruefungsjagd):
 
 - Vollbild
 - Fenstermodus 720p
