@@ -1,0 +1,49 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Presets/UI/QuestLog/QuestButton.gd" type="Script" id=1]
+
+[node name="QuestButton" type="Button"]
+margin_right = 772.0
+margin_bottom = 28.0
+rect_min_size = Vector2( 600, 28 )
+size_flags_horizontal = 3
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 10.0
+margin_right = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="QuestNameLabel" type="Label" parent="HBoxContainer"]
+margin_top = 7.0
+margin_right = 639.0
+margin_bottom = 21.0
+size_flags_horizontal = 3
+text = "Titel Quest 01"
+valign = 1
+
+[node name="VSeparator" type="VSeparator" parent="HBoxContainer"]
+margin_left = 643.0
+margin_right = 663.0
+margin_bottom = 28.0
+mouse_filter = 2
+custom_constants/separation = 20
+
+[node name="QuestStatusLabel" type="Label" parent="HBoxContainer"]
+margin_left = 667.0
+margin_top = 7.0
+margin_right = 752.0
+margin_bottom = 21.0
+text = "uncompleted"
+align = 2
+[connection signal="pressed" from="." to="." method="_on_QuestButton_pressed"]

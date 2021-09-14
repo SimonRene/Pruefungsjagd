@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Models/DozentLevel/Laternen/SM_Prop_LightPole_Base_01.fbx" type="PackedScene" id=1]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.00124634, 0.031671, 0.001 )
+
+[node name="Latern01" instance=ExtResource( 1 )]
+transform = Transform( 100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0 )
+
+[node name="StaticBody" type="StaticBody" parent="." index="1"]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0313995, 0 )
+shape = SubResource( 1 )

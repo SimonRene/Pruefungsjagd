@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Font/HighlandGothicFONT.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Scripts/RotateObject.gd" type="Script" id=2]
+
+[node name="ItemInspector" type="Spatial"]
+visible = false
+script = ExtResource( 2 )
+
+[node name="StopInspectingButton" type="Button" parent="."]
+visible = false
+anchor_left = 0.942969
+anchor_top = 0.0138889
+anchor_right = 0.989844
+anchor_bottom = 0.0944444
+margin_bottom = 2.0
+mouse_filter = 1
+custom_fonts/font = ExtResource( 1 )
+text = "X"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+[connection signal="pressed" from="StopInspectingButton" to="." method="stopInspecting"]

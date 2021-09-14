@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="CubeMesh" id=189]
+size = Vector3( 0.093, 0.049, 0.002 )
+
+[node name="KeyCards" type="Spatial"]
+transform = Transform( 1, 0, -3.55271e-14, 0, 1, 7.10543e-15, 0, 8.52651e-14, 1, 0.267233, 0.22524, 0.45275 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 0.998661, 0.0517434, 8.43003e-09, -0.0517434, 0.998661, -2.18218e-10, -8.43006e-09, -2.18076e-10, 1, 0, 0, 0 )
+mesh = SubResource( 189 )
+material/0 = null
+
+[node name="MeshInstance2" type="MeshInstance" parent="."]
+transform = Transform( 0.845467, -0.534028, -8.70044e-08, 0.534028, 0.845467, -2.51767e-08, 8.70043e-08, -2.51766e-08, 1, 0.054, -0.062, 0 )
+mesh = SubResource( 189 )
+material/0 = null

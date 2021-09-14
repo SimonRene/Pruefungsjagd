@@ -1,0 +1,20 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Objects/HollaForest/Holla/Animations/HollaInside.tres" type="Animation" id=1]
+[ext_resource path="res://Objects/HollaForest/Holla/Animations/HollaOpenDoor.tres" type="Animation" id=2]
+[ext_resource path="res://Objects/HollaForest/Holla/Animations/HollaCloseDoor.tres" type="Animation" id=3]
+[ext_resource path="res://Objects/HollaForest/Holla/Animations/HollaDoorWait.tres" type="Animation" id=4]
+[ext_resource path="res://Models/HollaForest/Holla/Holla_Animated_10.fbx" type="PackedScene" id=5]
+[ext_resource path="res://Objects/HollaForest/Holla/Animations/HollaDoorOpenWait.tres" type="Animation" id=6]
+
+[node name="Holla_Animated_10" instance=ExtResource( 5 )]
+
+[node name="Root" parent="." index="0"]
+transform = Transform( 0.989902, 0.000865137, 0.141748, -0.000873955, 1, -4.37431e-08, -0.141748, -0.000123838, 0.989903, -0.161992, 0, -0.00507236 )
+
+[node name="AnimationPlayer" parent="." index="1"]
+anims/HollaCloseDoor = ExtResource( 3 )
+anims/HollaDoorOpenWait = ExtResource( 6 )
+anims/HollaDoorWait = ExtResource( 4 )
+anims/HollaInside = ExtResource( 1 )
+anims/HollaOpenDoor = ExtResource( 2 )

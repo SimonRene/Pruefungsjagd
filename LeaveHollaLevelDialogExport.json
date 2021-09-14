@@ -1,0 +1,56 @@
+{
+  "default_conversation": "Node0",
+  "nodes": {
+    "Node0": {
+      "Line0": "Ich",
+      "type": "Conversation"
+    },
+    "Node1": {
+      "Line0": "Mal schauen, wie die Lösungen so aussehen...",
+      "Size": 1,
+      "type": "Speech"
+    },
+    "Node2": {
+      "Line0": ".... VERDAMMT!!! \nIch wurde übers Ohr gehauen!!! \nDas Blatt ist leer...",
+      "Size": 1,
+      "type": "Speech"
+    },
+    "Node3": {
+      "Line0": "Was soll ich jetzt tun? ... \nDann muss ich jetzt wohl doch den anderen Plan verfolgen \nund bei meinem Dozenten einbrechen...",
+      "Size": 1,
+      "type": "Speech"
+    },
+    "Node4": {
+      "Line0": "Also auf gehts!",
+      "Line1": "leaveHollaLevel",
+      "Size": 2,
+      "type": "Speech"
+    }
+  },
+  "sc": {
+    "Node0": {
+      "0": {
+        "to": "Node1",
+        "to_slot": 0
+      }
+    },
+    "Node1": {
+      "0": {
+        "to": "Node2",
+        "to_slot": 0
+      }
+    },
+    "Node2": {
+      "0": {
+        "to": "Node3",
+        "to_slot": 0
+      }
+    },
+    "Node3": {
+      "0": {
+        "to": "Node4",
+        "to_slot": 0
+      }
+    }
+  }
+}

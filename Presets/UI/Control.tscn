@@ -1,0 +1,186 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/Control.gd" type="Script" id=1]
+[ext_resource path="res://Font/Arial22.tres" type="DynamicFont" id=2]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.235294, 0.235294, 0.235294, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0, 0, 0, 0.243137 )
+
+[node name="Control" type="Control"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 300.0
+margin_top = -197.0
+margin_right = -318.0
+margin_bottom = -49.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpeechPanel" type="Panel" parent="."]
+visible = false
+anchor_left = 0.53
+anchor_top = 1.314
+anchor_right = 0.53
+anchor_bottom = 1.314
+margin_left = -455.18
+margin_top = -194.472
+margin_right = 454.82
+margin_bottom = -52.472
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="SpeechPanel"]
+margin_left = 24.0
+margin_top = 15.0
+margin_right = 513.0
+margin_bottom = 129.0
+size_flags_stretch_ratio = 0.0
+text = "Text..."
+autowrap = true
+
+[node name="Button" type="Button" parent="SpeechPanel"]
+margin_left = 771.643
+margin_top = 98.2704
+margin_right = 883.643
+margin_bottom = 121.27
+text = "Next"
+
+[node name="ChoicePanel" type="Panel" parent="."]
+visible = false
+anchor_left = 0.53
+anchor_top = 1.302
+anchor_right = 0.53
+anchor_bottom = 1.302
+margin_left = -455.18
+margin_top = -192.696
+margin_right = 454.82
+margin_bottom = -50.696
+
+[node name="Label" type="Label" parent="ChoicePanel"]
+margin_left = 24.0
+margin_top = 15.0
+margin_right = 512.0
+margin_bottom = 129.0
+text = "Frage..."
+
+[node name="Button" type="Button" parent="ChoicePanel"]
+visible = false
+margin_left = 771.643
+margin_top = 15.0
+margin_right = 897.643
+margin_bottom = 38.0
+grow_horizontal = 0
+text = "1"
+
+[node name="Button2" type="Button" parent="ChoicePanel"]
+visible = false
+margin_left = 771.643
+margin_top = 59.7259
+margin_right = 897.643
+margin_bottom = 82.7259
+grow_horizontal = 0
+text = "2"
+
+[node name="Button3" type="Button" parent="ChoicePanel"]
+visible = false
+margin_left = 771.643
+margin_top = 104.27
+margin_right = 897.643
+margin_bottom = 127.27
+grow_horizontal = 0
+text = "3"
+
+[node name="NamePanel" type="Panel" parent="."]
+visible = false
+margin_left = -116.166
+margin_top = -20.0
+margin_right = 7.83441
+margin_bottom = 7.0
+custom_styles/panel = SubResource( 1 )
+
+[node name="Label" type="Label" parent="NamePanel"]
+margin_left = 5.29413
+margin_top = 7.20593
+margin_right = 121.294
+margin_bottom = 27.2059
+text = "Name"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InteractionLabel" type="Label" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = -1.131
+anchor_right = 0.5
+anchor_bottom = -1.131
+margin_left = -77.4319
+margin_top = 49.956
+margin_right = 78.5681
+margin_bottom = 86.956
+grow_horizontal = 2
+text = "interact..."
+align = 1
+valign = 1
+
+[node name="LoadingInfo" type="Panel" parent="."]
+visible = false
+anchor_left = 0.358064
+anchor_top = -1.40235
+anchor_right = 0.622414
+anchor_bottom = -0.915863
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="LoadingInfo"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -39.0
+margin_top = -12.5
+margin_right = 39.0
+margin_bottom = 12.5
+custom_fonts/font = ExtResource( 2 )
+text = "Laden..."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InfoPanel" type="Panel" parent="."]
+visible = false
+anchor_left = 0.121036
+anchor_top = 0.0520787
+anchor_right = 0.876323
+anchor_bottom = 0.491268
+grow_horizontal = 2
+grow_vertical = 2
+custom_styles/panel = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="InfoLabel" type="Label" parent="InfoPanel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 2 )
+text = "Info"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="."]
+[connection signal="pressed" from="SpeechPanel/Button" to="." method="_on_speech_next_pressed"]
+[connection signal="pressed" from="ChoicePanel/Button" to="." method="_on_choice_1_pressed"]
+[connection signal="pressed" from="ChoicePanel/Button2" to="." method="_on_choice_2_pressed"]
+[connection signal="pressed" from="ChoicePanel/Button3" to="." method="_on_choice_3_pressed"]

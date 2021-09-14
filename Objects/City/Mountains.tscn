@@ -1,0 +1,2021 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Models/Vikings/POLYGON_Vikings_Pack_DemoScene_Export.fbx" type="PackedScene" id=1]
+[ext_resource path="res://Models/Vikings/M_Viking_01.material" type="Material" id=2]
+
+[node name="POLYGON_Vikings_Pack_DemoScene_Export" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, 1, 0, -1, -1.62921e-07, 0, 0, 0 )
+
+[node name="SM_Prop_Village_Entrance_01_Snow2_333" parent="." index="0"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Plank_03_Snow22" parent="." index="1"]
+visible = false
+
+[node name="SM_Env_Path_Wood_02_Snow22" parent="." index="2"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Plank_01_Snow4" parent="." index="3"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Plank_03_Snow23" parent="." index="4"]
+visible = false
+
+[node name="SM_Bld_Base_Long_02_Snow4" parent="." index="5"]
+visible = false
+
+[node name="SM_Bld_Base_Long_Door_02_Snow4_269" parent="." index="6"]
+visible = false
+
+[node name="SM_Env_Path_Wood_02_Snow_297" parent="." index="7"]
+visible = false
+
+[node name="SM_Bld_Base_Door_01_Snow7" parent="." index="8"]
+visible = false
+
+[node name="SM_Env_Path_Wood_01_Snow_294" parent="." index="9"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Plank_03_Snow10" parent="." index="10"]
+visible = false
+
+[node name="SM_Env_Path_Wood_02_Snow14" parent="." index="11"]
+visible = false
+
+[node name="SM_Bld_Wharf_01_Snow_279" parent="." index="12"]
+visible = false
+
+[node name="SM_Env_Path_Wood_02_Snow12" parent="." index="13"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Plank_03_Snow11" parent="." index="14"]
+visible = false
+
+[node name="SM_Env_Path_Wood_02_Snow23" parent="." index="15"]
+visible = false
+
+[node name="SM_Env_Path_Wood_02_Snow24" parent="." index="16"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Plank_03_Snow7" parent="." index="17"]
+visible = false
+
+[node name="SM_Env_Path_Wood_02_Snow25" parent="." index="18"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Plank_01_Snow3" parent="." index="19"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Plank_02_Snow_306" parent="." index="20"]
+visible = false
+
+[node name="SM_Bld_Wharf_01_Snow3" parent="." index="21"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Plank_03_Snow9" parent="." index="22"]
+visible = false
+
+[node name="SM_Bld_Base_Long_Door_02_Snow6" parent="." index="23"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Plank_01_Snow_300" parent="." index="24"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Plank_03_Snow24" parent="." index="25"]
+visible = false
+
+[node name="SM_Env_Path_Wood_02_Snow4" parent="." index="26"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Plank_03_Snow3" parent="." index="27"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Plank_03_Snow_309" parent="." index="28"]
+visible = false
+
+[node name="SM_Env_Path_Wood_02_Snow6" parent="." index="29"]
+visible = false
+
+[node name="SM_Env_Path_Wood_02_Snow8" parent="." index="30"]
+visible = false
+
+[node name="SM_Env_Path_Wood_02_Snow26" parent="." index="31"]
+visible = false
+
+[node name="SM_Env_Path_Wood_02_Snow11" parent="." index="32"]
+visible = false
+
+[node name="SM_Env_Path_Wood_02_Snow2_302" parent="." index="33"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Plank_03_Snow25" parent="." index="34"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Plank_03_Snow26" parent="." index="35"]
+visible = false
+
+[node name="SM_Env_Path_Wood_02_Snow27" parent="." index="36"]
+visible = false
+
+[node name="SM_Bld_Base_Door_01_Snow_172" parent="." index="37"]
+visible = false
+
+[node name="SM_Bld_Base_Long_Door_01_Snow8" parent="." index="38"]
+visible = false
+
+[node name="SM_Bld_Base_Door_01_Snow6" parent="." index="39"]
+visible = false
+
+[node name="SM_Bld_Base_Long_02_Snow_200" parent="." index="40"]
+visible = false
+
+[node name="SM_Bld_Base_Door_01_Snow8" parent="." index="41"]
+visible = false
+
+[node name="SM_Bld_Base_Door_01_Snow5" parent="." index="42"]
+visible = false
+
+[node name="SM_Bld_Base_Long_Door_01_Snow7" parent="." index="43"]
+visible = false
+
+[node name="SM_Bld_Base_Door_01_Snow4" parent="." index="44"]
+visible = false
+
+[node name="SM_Bld_BoatHouse_02_Snow_197" parent="." index="45"]
+visible = false
+
+[node name="SM_Bld_Base_Long_02_Snow2_247" parent="." index="46"]
+visible = false
+
+[node name="SM_Prop_Shield_Decor_356" parent="." index="47"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_326" parent="." index="48"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_308" parent="." index="49"]
+visible = false
+
+[node name="SM_Prop_Shield_Decor_07_341" parent="." index="50"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_311" parent="." index="51"]
+visible = false
+
+[node name="SM_Prop_Shield_Decor_386" parent="." index="52"]
+visible = false
+
+[node name="SM_Prop_Shield_Decor_392" parent="." index="53"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_320" parent="." index="54"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_317" parent="." index="55"]
+visible = false
+
+[node name="SM_Prop_Shield_Decor_01_332" parent="." index="56"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_293" parent="." index="57"]
+visible = false
+
+[node name="SM_Prop_Shield_Decor_03_338" parent="." index="58"]
+visible = false
+
+[node name="SM_Prop_Shield_Decor_04_347" parent="." index="59"]
+visible = false
+
+[node name="SM_Prop_Shield_Decor_08_335" parent="." index="60"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_323" parent="." index="61"]
+visible = false
+
+[node name="SM_Prop_Shield_Decor_06_350" parent="." index="62"]
+visible = false
+
+[node name="SM_Prop_Shield_Decor_353" parent="." index="63"]
+visible = false
+
+[node name="SM_Prop_Shield_Decor_359" parent="." index="64"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_305" parent="." index="65"]
+visible = false
+
+[node name="SM_Prop_Shield_Decor_05_365" parent="." index="66"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_314" parent="." index="67"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_03_296" parent="." index="68"]
+visible = false
+
+[node name="SM_Prop_Shield_Decor_368" parent="." index="69"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_9" parent="." index="70"]
+visible = false
+
+[node name="SM_Prop_Shield_Decor_374" parent="." index="71"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_299" parent="." index="72"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_329" parent="." index="73"]
+visible = false
+
+[node name="SM_Prop_Shield_Decor_344" parent="." index="74"]
+visible = false
+
+[node name="SM_Prop_Shield_Decor_362" parent="." index="75"]
+visible = false
+
+[node name="SM_Prop_Shield_Decor_377" parent="." index="76"]
+visible = false
+
+[node name="SM_Prop_Shield_Decor_380" parent="." index="77"]
+visible = false
+
+[node name="SM_Prop_Shield_Decor_371" parent="." index="78"]
+visible = false
+
+[node name="SM_Prop_Shield_Decor_383" parent="." index="79"]
+visible = false
+
+[node name="SM_Prop_Shield_Decor_389" parent="." index="80"]
+visible = false
+
+[node name="SM_Prop_Flag_3" parent="." index="81"]
+visible = false
+
+[node name="SM_Env_Beach_04_Snow25" parent="." index="82"]
+visible = false
+
+[node name="SM_Prop_Shield_Decor_407" parent="." index="83"]
+visible = false
+
+[node name="SM_Prop_Shield_Decor_398" parent="." index="84"]
+visible = false
+
+[node name="SM_Unreal_Water5" parent="." index="85"]
+visible = false
+
+[node name="SM_Env_Beach_04_Snow26" parent="." index="86"]
+visible = false
+
+[node name="SM_Env_Stone_Statue_01_Snow2" parent="." index="87"]
+visible = false
+
+[node name="SM_Bld_Tower_Stone_Base_01_Snow_422" parent="." index="88"]
+visible = false
+
+[node name="SM_Bld_Tower_Stone_Base_01_Snow4" parent="." index="89"]
+visible = false
+
+[node name="SM_Prop_Cow_Skull_01_434" parent="." index="90"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Pole_13" parent="." index="91"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Pole_14" parent="." index="92"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Pole_15" parent="." index="93"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Pole_6" parent="." index="94"]
+visible = false
+
+[node name="SM_Bld_Tower_Stone_Base_01_Snow5" parent="." index="95"]
+visible = false
+
+[node name="SM_Prop_Shield_Decor_395" parent="." index="96"]
+visible = false
+
+[node name="SM_Prop_Shield_Decor_404" parent="." index="97"]
+visible = false
+
+[node name="SM_Unreal_Water4" parent="." index="98"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Pole_8" parent="." index="99"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Pole_11" parent="." index="100"]
+visible = false
+
+[node name="SM_Prop_Cow_Skull_3" parent="." index="101"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Pole_16" parent="." index="102"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Pole_17" parent="." index="103"]
+visible = false
+
+[node name="SM_Prop_Shield_Decor_401" parent="." index="104"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Pole_04_438" parent="." index="105"]
+visible = false
+
+[node name="SM_Prop_Flag_01_449" parent="." index="106"]
+visible = false
+
+[node name="SM_Env_Beach_04_Snow6" parent="." index="107"]
+visible = false
+
+[node name="SM_Env_Beach_04_Snow27" parent="." index="108"]
+visible = false
+
+[node name="SM_Env_Mountains_19" parent="." index="109"]
+material/0 = ExtResource( 2 )
+
+[node name="SM_Env_Mountains_8" parent="." index="110"]
+material/0 = ExtResource( 2 )
+
+[node name="SM_Env_Mountains_29" parent="." index="111"]
+visible = false
+material/0 = ExtResource( 2 )
+
+[node name="SM_Env_Mountains_494" parent="." index="112"]
+material/0 = ExtResource( 2 )
+
+[node name="SM_Env_Mountains_30" parent="." index="113"]
+material/0 = ExtResource( 2 )
+
+[node name="SM_Env_Beach_04_Snow28" parent="." index="114"]
+visible = false
+
+[node name="SM_Env_Beach_04_Snow14" parent="." index="115"]
+visible = false
+
+[node name="SM_Env_Beach_04_Snow21" parent="." index="116"]
+visible = false
+
+[node name="SM_Env_Mountains_17" parent="." index="117"]
+material/0 = ExtResource( 2 )
+
+[node name="SM_Env_Beach_04_Snow10" parent="." index="118"]
+visible = false
+
+[node name="SM_Env_Beach_04_Snow29" parent="." index="119"]
+visible = false
+
+[node name="SM_Env_Beach_04_Snow30" parent="." index="120"]
+visible = false
+
+[node name="SM_Env_Beach_04_Snow31" parent="." index="121"]
+visible = false
+
+[node name="SM_Env_Mountains_7" parent="." index="122"]
+material/0 = ExtResource( 2 )
+
+[node name="SM_Env_Beach_04_Snow16" parent="." index="123"]
+visible = false
+
+[node name="SM_Env_Mountains_13" parent="." index="124"]
+material/0 = ExtResource( 2 )
+
+[node name="SM_Env_Mountains_21" parent="." index="125"]
+material/0 = ExtResource( 2 )
+
+[node name="SM_Env_Beach_04_Snow24" parent="." index="126"]
+visible = false
+
+[node name="SM_Env_Beach_04_Snow32" parent="." index="127"]
+visible = false
+
+[node name="SM_Env_Mountains_31" parent="." index="128"]
+material/0 = ExtResource( 2 )
+
+[node name="SM_Env_Beach_04_Snow9" parent="." index="129"]
+visible = false
+
+[node name="SM_Env_Mountains_12" parent="." index="130"]
+material/0 = ExtResource( 2 )
+
+[node name="SM_Env_Mountains_32" parent="." index="131"]
+visible = false
+material/0 = ExtResource( 2 )
+
+[node name="SM_Env_Beach_04_Snow18" parent="." index="132"]
+visible = false
+
+[node name="SM_Env_Beach_04_Snow17" parent="." index="133"]
+visible = false
+
+[node name="SM_Env_Beach_04_Snow22" parent="." index="134"]
+visible = false
+
+[node name="SM_Env_Beach_04_Snow33" parent="." index="135"]
+visible = false
+
+[node name="SM_Env_Beach_04_Snow34" parent="." index="136"]
+visible = false
+
+[node name="SM_Env_Mountains_10" parent="." index="137"]
+material/0 = ExtResource( 2 )
+
+[node name="SM_Env_Mountains_16" parent="." index="138"]
+visible = false
+material/0 = ExtResource( 2 )
+
+[node name="SM_Env_Mountains_33" parent="." index="139"]
+visible = false
+material/0 = ExtResource( 2 )
+
+[node name="SM_Env_Mountains_34" parent="." index="140"]
+material/0 = ExtResource( 2 )
+
+[node name="SM_Env_Mountains_35" parent="." index="141"]
+material/0 = ExtResource( 2 )
+
+[node name="SM_Env_DirtMound_04_Snow13_19" parent="." index="142"]
+visible = false
+
+[node name="SM_Env_DirtMound_04_Snow18" parent="." index="143"]
+visible = false
+
+[node name="SM_Env_Mountains_27" parent="." index="144"]
+visible = false
+material/0 = ExtResource( 2 )
+
+[node name="SM_Prop_Rope_02_521" parent="." index="145"]
+visible = false
+
+[node name="SM_Prop_TorchStick_3" parent="." index="146"]
+visible = false
+
+[node name="SM_Prop_Ladder_01_524" parent="." index="147"]
+visible = false
+
+[node name="SM_Env_Mountains_36" parent="." index="148"]
+visible = false
+material/0 = ExtResource( 2 )
+
+[node name="SM_Prop_Crate_Open_01_506" parent="." index="149"]
+visible = false
+
+[node name="SM_Prop_Ladder_5" parent="." index="150"]
+visible = false
+
+[node name="SM_Env_DirtMound_04_Snow16" parent="." index="151"]
+visible = false
+
+[node name="SM_Prop_Skull_Pole_6" parent="." index="152"]
+visible = false
+
+[node name="SM_Env_Beach_17" parent="." index="153"]
+visible = false
+
+[node name="SM_Env_Mountains_37" parent="." index="154"]
+visible = false
+material/0 = ExtResource( 2 )
+
+[node name="SM_Prop_Ladder_6" parent="." index="155"]
+visible = false
+
+[node name="SM_Prop_Rope_01_515" parent="." index="156"]
+visible = false
+
+[node name="SM_Prop_Ladder_7" parent="." index="157"]
+visible = false
+
+[node name="SM_Env_Beach_18" parent="." index="158"]
+visible = false
+
+[node name="SM_Env_Mountains_24" parent="." index="159"]
+material/0 = ExtResource( 2 )
+
+[node name="SM_Prop_Skull_Pole_01_3" parent="." index="160"]
+visible = false
+
+[node name="SM_Env_Beach_530" parent="." index="161"]
+visible = false
+
+[node name="SM_Env_Beach_15" parent="." index="162"]
+visible = false
+
+[node name="SM_Env_Mountains_25" parent="." index="163"]
+material/0 = ExtResource( 2 )
+
+[node name="SM_Prop_Crate_Base_01_509" parent="." index="164"]
+visible = false
+
+[node name="SM_Prop_Rope_518" parent="." index="165"]
+visible = false
+
+[node name="SM_Env_Mountains_38" parent="." index="166"]
+material/0 = ExtResource( 2 )
+
+[node name="SM_Prop_Crate_Open_512" parent="." index="167"]
+visible = false
+
+[node name="SM_Env_Beach_538" parent="." index="168"]
+visible = false
+
+[node name="SM_Prop_TorchStick_01_12" parent="." index="169"]
+visible = false
+
+[node name="SM_Env_DirtMound_04_Snow15" parent="." index="170"]
+visible = false
+
+[node name="SM_Env_DirtMound_04_Snow20" parent="." index="171"]
+visible = false
+
+[node name="SM_Env_DirtMound_04_Snow21" parent="." index="172"]
+visible = false
+
+[node name="SM_Env_DirtMound_04_Snow18_26" parent="." index="173"]
+visible = false
+
+[node name="SM_Env_Dirt_Tile_Large_02_Snow_30" parent="." index="174"]
+visible = false
+
+[node name="SM_Bld_Base_Long_Door_01_208" parent="." index="175"]
+visible = false
+
+[node name="SM_Bld_Base_Door_4" parent="." index="176"]
+visible = false
+
+[node name="SM_Prop_Spikes_12" parent="." index="177"]
+visible = false
+
+[node name="SM_Prop_Spikes_13" parent="." index="178"]
+visible = false
+
+[node name="SM_Env_Rock_06_233" parent="." index="179"]
+visible = false
+
+[node name="SM_Env_Rock_24" parent="." index="180"]
+visible = false
+
+[node name="SM_Prop_Spikes_9" parent="." index="181"]
+visible = false
+
+[node name="SM_Env_Rock_25" parent="." index="182"]
+visible = false
+
+[node name="SM_Env_Rock_8" parent="." index="183"]
+visible = false
+
+[node name="SM_Prop_Spikes_01_217" parent="." index="184"]
+visible = false
+
+[node name="SM_Prop_Spikes_5" parent="." index="185"]
+visible = false
+
+[node name="SM_Bld_Base_Door_01_188" parent="." index="186"]
+visible = false
+
+[node name="SM_Prop_Spikes_4" parent="." index="187"]
+visible = false
+
+[node name="SM_Prop_Spikes_14" parent="." index="188"]
+visible = false
+
+[node name="SM_Prop_Spikes_11" parent="." index="189"]
+visible = false
+
+[node name="SM_Bld_Base_Door_199" parent="." index="190"]
+visible = false
+
+[node name="SM_Prop_Spikes_8" parent="." index="191"]
+visible = false
+
+[node name="SM_Bld_Base_Long_Door_3" parent="." index="192"]
+visible = false
+
+[node name="SM_Prop_Spikes_15" parent="." index="193"]
+visible = false
+
+[node name="SM_Prop_Spikes_16" parent="." index="194"]
+visible = false
+
+[node name="SM_Env_Rock_13" parent="." index="195"]
+visible = false
+
+[node name="SM_Env_Rock_26" parent="." index="196"]
+visible = false
+
+[node name="SM_Env_Rock_27" parent="." index="197"]
+visible = false
+
+[node name="SM_Env_Rock_28" parent="." index="198"]
+visible = false
+
+[node name="SM_Env_Rock_29" parent="." index="199"]
+visible = false
+
+[node name="SM_Env_Rock_03_243" parent="." index="200"]
+visible = false
+
+[node name="SM_Env_Rock_5" parent="." index="201"]
+visible = false
+
+[node name="SM_Env_Rock_30" parent="." index="202"]
+visible = false
+
+[node name="SM_Env_Rock_31" parent="." index="203"]
+visible = false
+
+[node name="SM_Env_Rock_32" parent="." index="204"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_Large_268" parent="." index="205"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_01_273" parent="." index="206"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_Large_265" parent="." index="207"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_276" parent="." index="208"]
+visible = false
+
+[node name="SM_Env_Rock_23" parent="." index="209"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_Large_6" parent="." index="210"]
+visible = false
+
+[node name="SM_Env_Rock_20" parent="." index="211"]
+visible = false
+
+[node name="SM_Env_Rock_33" parent="." index="212"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_279" parent="." index="213"]
+visible = false
+
+[node name="SM_Env_Rock_15" parent="." index="214"]
+visible = false
+
+[node name="SM_Env_Rock_7" parent="." index="215"]
+visible = false
+
+[node name="SM_Env_Rock_18" parent="." index="216"]
+visible = false
+
+[node name="SM_Env_Rock_21" parent="." index="217"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_Large_01_262" parent="." index="218"]
+visible = false
+
+[node name="SM_Env_Rock_34" parent="." index="219"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_Large_5" parent="." index="220"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_282" parent="." index="221"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_285" parent="." index="222"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_8" parent="." index="223"]
+visible = false
+
+[node name="SM_Env_GrassPatch_02_Snow_880" parent="." index="224"]
+visible = false
+
+[node name="SM_Unreal_Water2_912" parent="." index="225"]
+visible = false
+
+[node name="SM_Prop_Boat_Broken_02_910" parent="." index="226"]
+visible = false
+
+[node name="SM_Env_IceChunk_28" parent="." index="227"]
+visible = false
+
+[node name="SM_Env_IceChunk_29" parent="." index="228"]
+visible = false
+
+[node name="SM_Env_IceChunk_26" parent="." index="229"]
+visible = false
+
+[node name="SM_Env_IceChunk_23" parent="." index="230"]
+visible = false
+
+[node name="SM_Env_IceChunk_25" parent="." index="231"]
+visible = false
+
+[node name="SM_Env_IceChunk_30" parent="." index="232"]
+visible = false
+
+[node name="SM_Env_IceChunk_12" parent="." index="233"]
+visible = false
+
+[node name="SM_Env_IceChunk_31" parent="." index="234"]
+visible = false
+
+[node name="SM_Env_GrassPatch_02_Snow6" parent="." index="235"]
+visible = false
+
+[node name="SM_Env_IceChunk_32" parent="." index="236"]
+visible = false
+
+[node name="SM_Env_GrassPatch_02_Snow7" parent="." index="237"]
+visible = false
+
+[node name="SM_Env_GrassPatch_02_Snow8" parent="." index="238"]
+visible = false
+
+[node name="SM_Env_IceChunk_33" parent="." index="239"]
+visible = false
+
+[node name="SM_Env_IceChunk_27" parent="." index="240"]
+visible = false
+
+[node name="SM_Veh_Boat_01_888" parent="." index="241"]
+visible = false
+
+[node name="SM_Env_IceChunk_14" parent="." index="242"]
+visible = false
+
+[node name="SM_Env_IceChunk_16" parent="." index="243"]
+visible = false
+
+[node name="SM_Env_IceChunk_34" parent="." index="244"]
+visible = false
+
+[node name="SM_Env_IceChunk_4" parent="." index="245"]
+visible = false
+
+[node name="SM_Env_IceChunk_35" parent="." index="246"]
+visible = false
+
+[node name="SM_Env_IceChunk_18" parent="." index="247"]
+visible = false
+
+[node name="SM_Env_GrassPatch_02_Snow4" parent="." index="248"]
+visible = false
+
+[node name="SM_Veh_Boat_901" parent="." index="249"]
+visible = false
+
+[node name="SM_Env_DirtMound_27" parent="." index="250"]
+visible = false
+
+[node name="SM_Env_Beach_12" parent="." index="251"]
+visible = false
+
+[node name="SM_Env_DirtMound_23" parent="." index="252"]
+visible = false
+
+[node name="SM_Env_Dirt_Mound_18" parent="." index="253"]
+visible = false
+
+[node name="SM_Env_Dirt_Mound_04_48" parent="." index="254"]
+visible = false
+
+[node name="SM_Env_DirtMound_28" parent="." index="255"]
+visible = false
+
+[node name="SM_Env_Beach_13" parent="." index="256"]
+visible = false
+
+[node name="SM_Env_Beach_9" parent="." index="257"]
+visible = false
+
+[node name="SM_Env_Beach_01_915" parent="." index="258"]
+visible = false
+
+[node name="SM_Env_Beach_8" parent="." index="259"]
+visible = false
+
+[node name="SM_Env_Beach_02_920" parent="." index="260"]
+visible = false
+
+[node name="SM_Env_Trench_9" parent="." index="261"]
+visible = false
+
+[node name="SM_Env_DirtMound_19" parent="." index="262"]
+visible = false
+
+[node name="SM_Env_Beach_04_934" parent="." index="263"]
+visible = false
+
+[node name="SM_Env_Beach_11" parent="." index="264"]
+visible = false
+
+[node name="SM_Env_Beach_14" parent="." index="265"]
+visible = false
+
+[node name="SM_Env_Trench_5" parent="." index="266"]
+visible = false
+
+[node name="SM_Env_Beach_16" parent="." index="267"]
+visible = false
+
+[node name="SM_Env_DirtMound_18" parent="." index="268"]
+visible = false
+
+[node name="SM_Env_Trench_10" parent="." index="269"]
+visible = false
+
+[node name="SM_Env_Trench_01_35" parent="." index="270"]
+visible = false
+
+[node name="SM_Env_Beach_03_925" parent="." index="271"]
+visible = false
+
+[node name="SM_Env_Trench_11" parent="." index="272"]
+visible = false
+
+[node name="SM_Env_Beach_19" parent="." index="273"]
+visible = false
+
+[node name="SM_Env_Beach_10" parent="." index="274"]
+visible = false
+
+[node name="SM_Env_Beach_5" parent="." index="275"]
+visible = false
+
+[node name="SM_Env_Trench_12" parent="." index="276"]
+visible = false
+
+[node name="SM_Env_DirtMound_24" parent="." index="277"]
+visible = false
+
+[node name="SM_Env_Trench_13" parent="." index="278"]
+visible = false
+
+[node name="SM_Env_Trench_14" parent="." index="279"]
+visible = false
+
+[node name="SM_Env_Dirt_Mound_6" parent="." index="280"]
+visible = false
+
+[node name="SM_Env_Dirt_Mound_19" parent="." index="281"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_33" parent="." index="282"]
+visible = false
+
+[node name="SM_Env_Dirt_Mound_20" parent="." index="283"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_86" parent="." index="284"]
+visible = false
+
+[node name="SM_Prop_Dock_02_70" parent="." index="285"]
+visible = false
+
+[node name="SM_Env_Path_Wood_8" parent="." index="286"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_34" parent="." index="287"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_35" parent="." index="288"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_36" parent="." index="289"]
+visible = false
+
+[node name="SM_Env_Dirt_Mound_15" parent="." index="290"]
+visible = false
+
+[node name="SM_Env_Dirt_Mound_21" parent="." index="291"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_9" parent="." index="292"]
+visible = false
+
+[node name="SM_Env_Dirt_Mound_11" parent="." index="293"]
+visible = false
+
+[node name="SM_Env_DirtMound_29" parent="." index="294"]
+visible = false
+
+[node name="SM_Env_Path_Wood_9" parent="." index="295"]
+visible = false
+
+[node name="SM_Env_Path_Wood_10" parent="." index="296"]
+visible = false
+
+[node name="SM_Env_Path_Wood_11" parent="." index="297"]
+visible = false
+
+[node name="SM_Env_Path_Wood_02_75" parent="." index="298"]
+visible = false
+
+[node name="SM_Env_DirtMound_26" parent="." index="299"]
+visible = false
+
+[node name="SM_Prop_Dock_01_67" parent="." index="300"]
+visible = false
+
+[node name="SM_Env_Dirt_Mound_10" parent="." index="301"]
+visible = false
+
+[node name="SM_Prop_Dock_4" parent="." index="302"]
+visible = false
+
+[node name="SM_Env_Trench_Bridge_01_64" parent="." index="303"]
+visible = false
+
+[node name="SM_Prop_Dock_5" parent="." index="304"]
+visible = false
+
+[node name="SM_Prop_Village_Entrance_01_83" parent="." index="305"]
+visible = false
+
+[node name="SM_Env_Dirt_Mound_9" parent="." index="306"]
+visible = false
+
+[node name="SM_Env_Dirt_Mound_22" parent="." index="307"]
+visible = false
+
+[node name="SM_Env_Dirt_Mound_23" parent="." index="308"]
+visible = false
+
+[node name="SM_Env_Path_Wood_6" parent="." index="309"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_11" parent="." index="310"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_13" parent="." index="311"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_37" parent="." index="312"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_38" parent="." index="313"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_39" parent="." index="314"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_40" parent="." index="315"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_41" parent="." index="316"]
+visible = false
+
+[node name="SM_Env_Trench_Spikes_11" parent="." index="317"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_42" parent="." index="318"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_31" parent="." index="319"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_43" parent="." index="320"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_18" parent="." index="321"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_44" parent="." index="322"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_45" parent="." index="323"]
+visible = false
+
+[node name="SM_Env_Trench_Spikes_01_120" parent="." index="324"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_26" parent="." index="325"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_29" parent="." index="326"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_30" parent="." index="327"]
+visible = false
+
+[node name="SM_Env_Trench_Spikes_7" parent="." index="328"]
+visible = false
+
+[node name="SM_Env_Trench_Spikes_12" parent="." index="329"]
+visible = false
+
+[node name="SM_Env_Trench_Spikes_5" parent="." index="330"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_46" parent="." index="331"]
+visible = false
+
+[node name="SM_Env_Trench_Spikes_13" parent="." index="332"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_47" parent="." index="333"]
+visible = false
+
+[node name="SM_Env_Trench_Spikes_14" parent="." index="334"]
+visible = false
+
+[node name="SM_Env_Trench_Spikes_15" parent="." index="335"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_20" parent="." index="336"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_23" parent="." index="337"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_28" parent="." index="338"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_32" parent="." index="339"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_48" parent="." index="340"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_49" parent="." index="341"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_50" parent="." index="342"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_51" parent="." index="343"]
+visible = false
+
+[node name="SM_Env_Trench_Spikes_4" parent="." index="344"]
+visible = false
+
+[node name="SM_Env_Trench_Spikes_10" parent="." index="345"]
+visible = false
+
+[node name="SM_Prop_Wood_Spike_7" parent="." index="346"]
+visible = false
+
+[node name="SM_Env_Dirt_Mound_24" parent="." index="347"]
+visible = false
+
+[node name="SM_Prop_Wood_Spike_5" parent="." index="348"]
+visible = false
+
+[node name="SM_Prop_Wood_Spike_13" parent="." index="349"]
+visible = false
+
+[node name="SM_Prop_Wood_Spike_14" parent="." index="350"]
+visible = false
+
+[node name="SM_Bld_Guard_Tower_5" parent="." index="351"]
+visible = false
+
+[node name="SM_Prop_Wood_Spike_01_137" parent="." index="352"]
+visible = false
+
+[node name="SM_Prop_Wood_Spike_6" parent="." index="353"]
+visible = false
+
+[node name="SM_Prop_Wood_Spike_12" parent="." index="354"]
+visible = false
+
+[node name="SM_Env_Dirt_Mound_25" parent="." index="355"]
+visible = false
+
+[node name="SM_Bld_Guard_Tower_6" parent="." index="356"]
+visible = false
+
+[node name="SM_Bld_Base_Long_Door_02_163" parent="." index="357"]
+visible = false
+
+[node name="SM_Prop_Wood_Spike_11" parent="." index="358"]
+visible = false
+
+[node name="SM_Prop_Wood_Spike_10" parent="." index="359"]
+visible = false
+
+[node name="SM_Prop_Fence_Platform_01_151" parent="." index="360"]
+visible = false
+
+[node name="SM_Prop_Wood_Spike_8" parent="." index="361"]
+visible = false
+
+[node name="SM_Bld_Guard_Tower_01_154" parent="." index="362"]
+visible = false
+
+[node name="SM_Bld_Guard_Tower_7" parent="." index="363"]
+visible = false
+
+[node name="SM_Prop_Wood_Spike_15" parent="." index="364"]
+visible = false
+
+[node name="SM_Prop_Fence_Platform_5" parent="." index="365"]
+visible = false
+
+[node name="SM_Prop_Fence_Platform_4" parent="." index="366"]
+visible = false
+
+[node name="SM_Prop_Fence_Platform_6" parent="." index="367"]
+visible = false
+
+[node name="SM_Prop_Crate_Open_01_Snow2_729" parent="." index="368"]
+visible = false
+
+[node name="SM_Env_DirtMound_16" parent="." index="369"]
+visible = false
+
+[node name="SM_Prop_Fish_Rack_01_775" parent="." index="370"]
+visible = false
+
+[node name="SM_Env_DirtMound_11" parent="." index="371"]
+visible = false
+
+[node name="SM_Env_Stone_02_Snow_757" parent="." index="372"]
+visible = false
+
+[node name="SM_Env_DirtMound_7" parent="." index="373"]
+visible = false
+
+[node name="SM_Env_DirtMound_17" parent="." index="374"]
+visible = false
+
+[node name="SM_Prop_Fish_Rack_3" parent="." index="375"]
+visible = false
+
+[node name="SM_Env_DirtMound_12" parent="." index="376"]
+visible = false
+
+[node name="SM_Prop_Crate_Base_01_Snow2_732" parent="." index="377"]
+visible = false
+
+[node name="SM_Env_DirtMound_04_779" parent="." index="378"]
+visible = false
+
+[node name="SM_Env_DirtMound_6" parent="." index="379"]
+visible = false
+
+[node name="SM_Env_Glacier_13" parent="." index="380"]
+visible = false
+
+[node name="SM_Env_Glacier_14" parent="." index="381"]
+visible = false
+
+[node name="SM_Prop_Crate_Base_01_Snow_723" parent="." index="382"]
+visible = false
+
+[node name="SM_Prop_Crate_Open_01_Snow_726" parent="." index="383"]
+visible = false
+
+[node name="SM_Prop_Crate_Base_01_Snow4_742" parent="." index="384"]
+visible = false
+
+[node name="SM_Prop_Crate_Base_01_Snow5_748" parent="." index="385"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_01_Snow5_760" parent="." index="386"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_01_Snow6_763" parent="." index="387"]
+visible = false
+
+[node name="SM_Prop_Fur_Roll_01_769" parent="." index="388"]
+visible = false
+
+[node name="SM_Prop_Fur_Roll_03_772" parent="." index="389"]
+visible = false
+
+[node name="SM_Prop_Barrel_Half_01_Snow2_736" parent="." index="390"]
+visible = false
+
+[node name="SM_Prop_Crate_Base_01_Snow4" parent="." index="391"]
+visible = false
+
+[node name="SM_Prop_Crate_Open_01_Snow4_745" parent="." index="392"]
+visible = false
+
+[node name="SM_Prop_Rope_01_Snow2_754" parent="." index="393"]
+visible = false
+
+[node name="SM_Env_DirtMound_10" parent="." index="394"]
+visible = false
+
+[node name="SM_Prop_Crate_Open_01_Snow3_739" parent="." index="395"]
+visible = false
+
+[node name="SM_Env_DirtMound_20" parent="." index="396"]
+visible = false
+
+[node name="SM_Env_DirtMound_21" parent="." index="397"]
+visible = false
+
+[node name="SM_Env_DirtMound_22" parent="." index="398"]
+visible = false
+
+[node name="SM_Prop_Rack_01_Snow_793" parent="." index="399"]
+visible = false
+
+[node name="SM_Prop_Rack_01_Snow3" parent="." index="400"]
+visible = false
+
+[node name="SM_Env_Glacier_02_800" parent="." index="401"]
+visible = false
+
+[node name="SM_Env_DirtMound_25" parent="." index="402"]
+visible = false
+
+[node name="SM_Env_Glacier_03_803" parent="." index="403"]
+visible = false
+
+[node name="SM_Env_Glacier_Arch_01_806" parent="." index="404"]
+visible = false
+
+[node name="SM_Env_Glacier_5" parent="." index="405"]
+visible = false
+
+[node name="SM_Env_Glacier_6" parent="." index="406"]
+visible = false
+
+[node name="SM_Env_Glacier_01_797" parent="." index="407"]
+visible = false
+
+[node name="SM_Env_Glacier_3" parent="." index="408"]
+visible = false
+
+[node name="SM_Env_Glacier_15" parent="." index="409"]
+visible = false
+
+[node name="SM_Env_IceChunk_15" parent="." index="410"]
+visible = false
+
+[node name="SM_Env_Glacier_12" parent="." index="411"]
+visible = false
+
+[node name="SM_Env_IceChunk_06_826" parent="." index="412"]
+visible = false
+
+[node name="SM_Env_IceChunk_11" parent="." index="413"]
+visible = false
+
+[node name="SM_Env_IceChunk_17" parent="." index="414"]
+visible = false
+
+[node name="SM_Env_IceChunk_9" parent="." index="415"]
+visible = false
+
+[node name="SM_Env_IceChunk_10" parent="." index="416"]
+visible = false
+
+[node name="SM_Env_IceChunk_838" parent="." index="417"]
+visible = false
+
+[node name="SM_Env_IceChunk_02_845" parent="." index="418"]
+visible = false
+
+[node name="SM_Env_IceChunk_19" parent="." index="419"]
+visible = false
+
+[node name="SM_Env_Glacier_16" parent="." index="420"]
+visible = false
+
+[node name="SM_Env_IceChunk_03_848" parent="." index="421"]
+visible = false
+
+[node name="SM_Env_Glacier_10" parent="." index="422"]
+visible = false
+
+[node name="SM_Env_Iceberg_02_823" parent="." index="423"]
+visible = false
+
+[node name="SM_Env_Glacier_17" parent="." index="424"]
+visible = false
+
+[node name="SM_Env_Glacier_9" parent="." index="425"]
+visible = false
+
+[node name="SM_Env_Iceberg_01_820" parent="." index="426"]
+visible = false
+
+[node name="SM_Env_IceChunk_8" parent="." index="427"]
+visible = false
+
+[node name="SM_Env_IceChunk_05_835" parent="." index="428"]
+visible = false
+
+[node name="SM_Env_IceChunk_01_842" parent="." index="429"]
+visible = false
+
+[node name="SM_Env_IceChunk_04_851" parent="." index="430"]
+visible = false
+
+[node name="SM_Env_IceChunk_5" parent="." index="431"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Side_01_Snow_359" parent="." index="432"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Plank_03_Snow27" parent="." index="433"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Side_01_Snow12" parent="." index="434"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Side_01_Snow13" parent="." index="435"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Plank_03_Snow28" parent="." index="436"]
+visible = false
+
+[node name="SM_Env_Path_Wood_02_Snow28" parent="." index="437"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Plank_02_Snow3" parent="." index="438"]
+visible = false
+
+[node name="SM_Prop_Boat_Broken_01_Snow_356" parent="." index="439"]
+visible = false
+
+[node name="SM_Prop_Pole_03_Snow4" parent="." index="440"]
+visible = false
+
+[node name="SM_Env_Rock_02_Snow_375" parent="." index="441"]
+visible = false
+
+[node name="SM_Prop_Fish_Rack_02_Snow_389" parent="." index="442"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Plank_03_Snow14" parent="." index="443"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Plank_03_Snow29" parent="." index="444"]
+visible = false
+
+[node name="SM_Prop_Pole_03_Snow3" parent="." index="445"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Plank_03_Snow17" parent="." index="446"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Plank_03_Snow19" parent="." index="447"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Side_01_Snow8" parent="." index="448"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Side_01_Snow5" parent="." index="449"]
+visible = false
+
+[node name="SM_Env_Path_Wood_02_Snow19" parent="." index="450"]
+visible = false
+
+[node name="SM_Env_Path_Wood_02_Snow29" parent="." index="451"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Plank_03_Snow18" parent="." index="452"]
+visible = false
+
+[node name="SM_Env_Path_Wood_02_Snow30" parent="." index="453"]
+visible = false
+
+[node name="SM_Env_Path_Wood_02_Snow20" parent="." index="454"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Plank_03_Snow13" parent="." index="455"]
+visible = false
+
+[node name="SM_Env_Path_Wood_02_Snow17" parent="." index="456"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Plank_03_Snow30" parent="." index="457"]
+visible = false
+
+[node name="SM_Env_Path_Wood_02_Snow31" parent="." index="458"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Plank_03_Snow31" parent="." index="459"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Side_01_Snow7" parent="." index="460"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Side_01_Snow14" parent="." index="461"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Side_01_Snow15" parent="." index="462"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Side_01_Snow16" parent="." index="463"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Side_01_Snow17" parent="." index="464"]
+visible = false
+
+[node name="SM_Env_Path_Wood_Side_01_Snow18" parent="." index="465"]
+visible = false
+
+[node name="SM_Env_Rock_03_Snow_372" parent="." index="466"]
+visible = false
+
+[node name="SM_Prop_Pole_03_Snow_378" parent="." index="467"]
+visible = false
+
+[node name="SM_Bld_Stall_Cover_01_Snow_386" parent="." index="468"]
+visible = false
+
+[node name="SM_Bld_Window_01_Snow_383" parent="." index="469"]
+visible = false
+
+[node name="SM_Prop_Flag_01_Snow4" parent="." index="470"]
+visible = false
+
+[node name="SM_Prop_Clay_Pot_01_Snow7" parent="." index="471"]
+visible = false
+
+[node name="SM_Prop_Clay_Pot_02_Snow4" parent="." index="472"]
+visible = false
+
+[node name="SM_Prop_Clay_Pot_01_Snow8" parent="." index="473"]
+visible = false
+
+[node name="SM_Prop_Clay_Pot_01_Snow9" parent="." index="474"]
+visible = false
+
+[node name="SM_Prop_Fence_Stick_01_Snow_446" parent="." index="475"]
+visible = false
+
+[node name="SM_Prop_Fence_Stick_01_Snow14" parent="." index="476"]
+visible = false
+
+[node name="SM_Prop_Fence_Stick_01_Snow6" parent="." index="477"]
+visible = false
+
+[node name="SM_Prop_Fence_Stick_01_Snow15" parent="." index="478"]
+visible = false
+
+[node name="SM_Prop_Fence_Stick_01_Snow16" parent="." index="479"]
+visible = false
+
+[node name="SM_Prop_Fence_Stick_01_Snow17" parent="." index="480"]
+visible = false
+
+[node name="SM_Prop_Fence_Stick_01_Snow5" parent="." index="481"]
+visible = false
+
+[node name="SM_Prop_Net_01_Snow_395" parent="." index="482"]
+visible = false
+
+[node name="SM_Prop_Clay_Pot_02_Snow5" parent="." index="483"]
+visible = false
+
+[node name="SM_Prop_Net_01_Snow2_398" parent="." index="484"]
+visible = false
+
+[node name="SM_Prop_Cow_Skull_01_Snow_418" parent="." index="485"]
+visible = false
+
+[node name="SM_Prop_Anvil_Stump_01_Snow_421" parent="." index="486"]
+visible = false
+
+[node name="SM_Prop_Anvil_01_Snow_424" parent="." index="487"]
+visible = false
+
+[node name="SM_Prop_Log_01_Snow_427" parent="." index="488"]
+visible = false
+
+[node name="SM_Prop_Clay_Pot_02_Snow_430" parent="." index="489"]
+visible = false
+
+[node name="SM_Prop_Clay_Pot_01_Snow4" parent="." index="490"]
+visible = false
+
+[node name="SM_Prop_Clay_Pot_01_Snow6" parent="." index="491"]
+visible = false
+
+[node name="SM_Prop_Flag_01_Snow_413" parent="." index="492"]
+visible = false
+
+[node name="SM_Prop_Flag_01_Snow5" parent="." index="493"]
+visible = false
+
+[node name="SM_Prop_Clay_Pot_01_Snow_433" parent="." index="494"]
+visible = false
+
+[node name="SM_Env_Dirt_Tile_Large_02_Snow2_443" parent="." index="495"]
+visible = false
+
+[node name="SM_Prop_Fence_Stick_01_Snow18" parent="." index="496"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_02_Snow9" parent="." index="497"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_02_Snow_466" parent="." index="498"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_03_Snow9" parent="." index="499"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_01_Snow9" parent="." index="500"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_01_Snow6" parent="." index="501"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_01_Snow3" parent="." index="502"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_03_Snow10" parent="." index="503"]
+visible = false
+
+[node name="SM_Prop_BoatRamp_01_Snow_490" parent="." index="504"]
+visible = false
+
+[node name="SM_Prop_Cow_Skull_01_Snow3" parent="." index="505"]
+visible = false
+
+[node name="SM_Prop_Rock_Circle_01_Snow_499" parent="." index="506"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_02_Snow4" parent="." index="507"]
+visible = false
+
+[node name="SM_Prop_Fence_Stick_01_Snow12" parent="." index="508"]
+visible = false
+
+[node name="SM_Prop_Fence_Stick_01_Snow19" parent="." index="509"]
+visible = false
+
+[node name="SM_Prop_Log_01_Snow3" parent="." index="510"]
+visible = false
+
+[node name="SM_Prop_Logs_01_Snow2_481" parent="." index="511"]
+visible = false
+
+[node name="SM_Prop_Pole_03_Snow4_457" parent="." index="512"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_01_Snow_463" parent="." index="513"]
+visible = false
+
+[node name="SM_Prop_Fish_Rack_02_Snow2_484" parent="." index="514"]
+visible = false
+
+[node name="SM_Prop_Rock_Totem_01_Snow_502" parent="." index="515"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_01_Snow10" parent="." index="516"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_03_Snow11" parent="." index="517"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_02_Snow10" parent="." index="518"]
+visible = false
+
+[node name="SM_Prop_Fence_Stick_01_Snow13" parent="." index="519"]
+visible = false
+
+[node name="SM_Prop_Logs_01_Snow_478" parent="." index="520"]
+visible = false
+
+[node name="SM_Prop_Bench_01_Snow_487" parent="." index="521"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_03_Snow_469" parent="." index="522"]
+visible = false
+
+[node name="SM_Prop_Wagon_01_Snow_493" parent="." index="523"]
+visible = false
+
+[node name="SM_Prop_Net_01_505" parent="." index="524"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_02_Snow11" parent="." index="525"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_03_Snow12" parent="." index="526"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_01_Snow11" parent="." index="527"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_03_Snow13" parent="." index="528"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_02_Snow12" parent="." index="529"]
+visible = false
+
+[node name="SM_Env_DirtMound_04_Snow13" parent="." index="530"]
+visible = false
+
+[node name="SM_Prop_Rock_Circle_01_Snow2_539" parent="." index="531"]
+visible = false
+
+[node name="SM_Env_Mountains_5" parent="." index="532"]
+material/0 = ExtResource( 2 )
+
+[node name="SM_Prop_Ladder_02_Snow3" parent="." index="533"]
+visible = false
+
+[node name="SM_Env_Mountains_6" parent="." index="534"]
+material/0 = ExtResource( 2 )
+
+[node name="SM_Prop_Fence_Wood_02_Snow13" parent="." index="535"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_02_Snow14" parent="." index="536"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_03_Snow7" parent="." index="537"]
+visible = false
+
+[node name="SM_Prop_Bench_01_Snow3" parent="." index="538"]
+visible = false
+
+[node name="SM_Prop_Logs_01_Snow5" parent="." index="539"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_01_Snow12" parent="." index="540"]
+visible = false
+
+[node name="SM_Prop_Ladder_02_Snow_535" parent="." index="541"]
+visible = false
+
+[node name="SM_Env_DirtMound_04_Snow9" parent="." index="542"]
+visible = false
+
+[node name="SM_Env_DirtMound_04_Snow14" parent="." index="543"]
+visible = false
+
+[node name="SM_Env_DirtMound_04_Snow17" parent="." index="544"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_01_Snow8" parent="." index="545"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_03_Snow14" parent="." index="546"]
+visible = false
+
+[node name="SM_Prop_Fence_Platform_01_Snow_531" parent="." index="547"]
+visible = false
+
+[node name="SM_Prop_Seat_01_Snow4" parent="." index="548"]
+visible = false
+
+[node name="SM_Prop_Seat_01_Snow5" parent="." index="549"]
+visible = false
+
+[node name="SM_Env_DirtMound_04_Snow5" parent="." index="550"]
+visible = false
+
+[node name="SM_Env_DirtMound_04_Snow7" parent="." index="551"]
+visible = false
+
+[node name="SM_Prop_Logs_01_Snow3_524" parent="." index="552"]
+visible = false
+
+[node name="SM_Env_DirtMound_04_Snow3" parent="." index="553"]
+visible = false
+
+[node name="SM_Prop_Fence_Platform_01_Snow3" parent="." index="554"]
+visible = false
+
+[node name="SM_Env_DirtMound_04_Snow19" parent="." index="555"]
+visible = false
+
+[node name="SM_Prop_Seat_01_Snow_542" parent="." index="556"]
+visible = false
+
+[node name="SM_Env_DirtMound_04_Snow_550" parent="." index="557"]
+visible = false
+
+[node name="SM_Env_Mountains_02_561" parent="." index="558"]
+material/0 = ExtResource( 2 )
+
+[node name="SM_Env_Mountains_01_564" parent="." index="559"]
+material/0 = ExtResource( 2 )
+
+[node name="SM_Env_Tree_Pine_01_Snow_606" parent="." index="560"]
+visible = false
+
+[node name="SM_Env_Stone_02_651" parent="." index="561"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_03_Snow3_634" parent="." index="562"]
+visible = false
+
+[node name="SM_Env_Stone_7" parent="." index="563"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_Large_01_Snow2_622" parent="." index="564"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_Large_01_Snow3_638" parent="." index="565"]
+visible = false
+
+[node name="SM_Env_DirtMound_04_Snow22" parent="." index="566"]
+visible = false
+
+[node name="SM_Env_Dirt_Tile_Large_02_717" parent="." index="567"]
+visible = false
+
+[node name="SM_Env_DirtMound_04_Snow11" parent="." index="568"]
+visible = false
+
+[node name="SM_Prop_Barrel_Half_01_Snow_720" parent="." index="569"]
+visible = false
+
+[node name="SM_Prop_Rope_01_Snow_671" parent="." index="570"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_Large_01_Snow_602" parent="." index="571"]
+visible = false
+
+[node name="SM_Env_Mountains_9" parent="." index="572"]
+material/0 = ExtResource( 2 )
+
+[node name="SM_Env_DirtMound_04_Snow23" parent="." index="573"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_01_Snow3_631" parent="." index="574"]
+visible = false
+
+[node name="SM_Env_Beach_04_Snow_574" parent="." index="575"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_03_Snow2_616" parent="." index="576"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_03_Snow_613" parent="." index="577"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_03_Snow5" parent="." index="578"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_01_Snow4_641" parent="." index="579"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_03_Snow5_644" parent="." index="580"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_03_Snow7" parent="." index="581"]
+visible = false
+
+[node name="SM_Env_Tree_Pine_01_Snow2_619" parent="." index="582"]
+visible = false
+
+[node name="SM_Env_Mountains_570" parent="." index="583"]
+material/0 = ExtResource( 2 )
+
+[node name="SM_Env_Stone_6" parent="." index="584"]
+visible = false
+
+[node name="SM_Env_Beach_04_Snow3" parent="." index="585"]
+visible = false
+
+[node name="SM_Env_Stone_8" parent="." index="586"]
+visible = false
+
+[node name="SM_Env_Stone_9" parent="." index="587"]
+visible = false
+
+[node name="SM_Prop_Spikes_01_Snow3" parent="." index="588"]
+visible = false
+
+[node name="SM_Prop_Spikes_01_Snow_664" parent="." index="589"]
+visible = false
+
+[node name="SM_Prop_Rope_02_Snow_668" parent="." index="590"]
+visible = false
+
+[node name="SM_Unreal_Water_705" parent="." index="591"]
+visible = false
+
+[node name="SM_Bld_Base_Long_Door_01_Snow2_146" parent="." index="592"]
+visible = false
+
+[node name="SM_Bld_Base_Long_Door_01_Snow6" parent="." index="593"]
+visible = false
+
+[node name="SM_Bld_Base_Long_Door_01_Snow5" parent="." index="594"]
+visible = false
+
+[node name="SM_Bld_Base_Long_Door_01_Snow4" parent="." index="595"]
+visible = false
+
+[node name="SM_Prop_Dock_01_Snow_46" parent="." index="596"]
+visible = false
+
+[node name="SM_Prop_Dock_02_Snow6" parent="." index="597"]
+visible = false
+
+[node name="SM_Prop_Dock_02_Snow4" parent="." index="598"]
+visible = false
+
+[node name="SM_Env_Beach_02_Snow3" parent="." index="599"]
+visible = false
+
+[node name="SM_Env_Beach_01_Snow5" parent="." index="600"]
+visible = false
+
+[node name="SM_Veh_BoatHead_01_Snow_67" parent="." index="601"]
+visible = false
+
+[node name="SM_Veh_Sail_Closed_03_74" parent="." index="602"]
+visible = false
+
+[node name="SM_Bld_BoatHouse_01_Snow_38" parent="." index="603"]
+visible = false
+
+[node name="SM_Veh_FishingBoat_01_41" parent="." index="604"]
+visible = false
+
+[node name="SM_Bld_BoatHouse_01_Snow3" parent="." index="605"]
+visible = false
+
+[node name="SM_Bld_Guard_Tower_01_Snow6" parent="." index="606"]
+visible = false
+
+[node name="SM_Bld_Guard_Tower_01_Snow8" parent="." index="607"]
+visible = false
+
+[node name="SM_Veh_FishingBoat_3" parent="." index="608"]
+visible = false
+
+[node name="SM_Prop_Dock_02_Snow_51" parent="." index="609"]
+visible = false
+
+[node name="SM_Prop_Dock_02_Snow7" parent="." index="610"]
+visible = false
+
+[node name="SM_Prop_Dock_02_Snow3" parent="." index="611"]
+visible = false
+
+[node name="SM_Veh_Boat_01_Snow3" parent="." index="612"]
+visible = false
+
+[node name="SM_Env_Beach_01_Snow4" parent="." index="613"]
+visible = false
+
+[node name="SM_Bld_Guard_Tower_01_Snow4" parent="." index="614"]
+visible = false
+
+[node name="SM_Prop_Village_Entrance_01_Snow_80" parent="." index="615"]
+visible = false
+
+[node name="SM_Env_Beach_01_Snow_24" parent="." index="616"]
+visible = false
+
+[node name="SM_Env_Beach_03_Snow_30" parent="." index="617"]
+visible = false
+
+[node name="SM_Env_Beach_01_Snow6" parent="." index="618"]
+visible = false
+
+[node name="SM_Env_Beach_02_Snow_33" parent="." index="619"]
+visible = false
+
+[node name="SM_Env_Beach_03_Snow3" parent="." index="620"]
+visible = false
+
+[node name="SM_Prop_Dock_01_Snow3" parent="." index="621"]
+visible = false
+
+[node name="SM_Veh_FishingBoat_01_Snow_59" parent="." index="622"]
+visible = false
+
+[node name="SM_Veh_FishingBoat_01_Snow4" parent="." index="623"]
+visible = false
+
+[node name="SM_Veh_FishingBoat_01_Snow5" parent="." index="624"]
+visible = false
+
+[node name="SM_Veh_Boat_01_Snow_64" parent="." index="625"]
+visible = false
+
+[node name="SM_Veh_Sail_Closed_01_70" parent="." index="626"]
+visible = false
+
+[node name="SM_Veh_BoatHead_02_Snow_77" parent="." index="627"]
+visible = false
+
+[node name="SM_Prop_Boat_Build_01_Snow_83" parent="." index="628"]
+visible = false
+
+[node name="SM_Bld_Guard_Tower_01_Snow_86" parent="." index="629"]
+visible = false
+
+[node name="SM_Bld_Guard_Tower_01_Snow5" parent="." index="630"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow37" parent="." index="631"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow7" parent="." index="632"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow38" parent="." index="633"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow39" parent="." index="634"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow40" parent="." index="635"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow_94" parent="." index="636"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow8" parent="." index="637"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow10" parent="." index="638"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow3" parent="." index="639"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow6" parent="." index="640"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow41" parent="." index="641"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow22" parent="." index="642"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow42" parent="." index="643"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow43" parent="." index="644"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow30" parent="." index="645"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow18" parent="." index="646"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow26" parent="." index="647"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow28" parent="." index="648"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow16" parent="." index="649"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow21" parent="." index="650"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow44" parent="." index="651"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow31" parent="." index="652"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow45" parent="." index="653"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow17" parent="." index="654"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow35" parent="." index="655"]
+visible = false
+
+[node name="SM_Bld_Guard_Tower_01_Snow9" parent="." index="656"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow34" parent="." index="657"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow14" parent="." index="658"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow15" parent="." index="659"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow23" parent="." index="660"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow19" parent="." index="661"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow27" parent="." index="662"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow29" parent="." index="663"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow46" parent="." index="664"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow47" parent="." index="665"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow48" parent="." index="666"]
+visible = false
+
+[node name="SM_Prop_Fence_Wood_Large_01_Snow49" parent="." index="667"]
+visible = false
+
+[node name="SM_Bld_Base_Long_Door_01_Snow_133" parent="." index="668"]
+visible = false

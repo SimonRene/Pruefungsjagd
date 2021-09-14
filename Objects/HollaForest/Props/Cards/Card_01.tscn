@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Models/HollaForest/HollaHuette/TextureMetarial.material" type="Material" id=1]
+[ext_resource path="res://Models/HollaForest/HollaHuette/Props/Cards/01/SM_Prop_Card_01.fbx" type="PackedScene" id=2]
+
+[node name="Card_01" instance=ExtResource( 2 )]
+
+[node name="SM_Prop_Card_02" parent="." index="0"]
+material/0 = ExtResource( 1 )

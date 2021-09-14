@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Models/HollaForest/HollaHuette/TextureMetarial.material" type="Material" id=1]
+[ext_resource path="res://Models/HollaForest/HollaHuette/Props/Shotgun/02/SM_Wep_Shotgun_02.fbx" type="PackedScene" id=2]
+
+[node name="Shotgun_02" instance=ExtResource( 2 )]
+
+[node name="SM_Wep_Shotgun_03" parent="." index="0"]
+material/0 = ExtResource( 1 )
+
+[node name="SM_Wep_Shotgun_02_Trigger_03" parent="SM_Wep_Shotgun_03" index="0"]
+material/0 = ExtResource( 1 )
+
+[node name="SM_Wep_Shotgun_02_Barrel2" parent="SM_Wep_Shotgun_03" index="1"]
+material/0 = ExtResource( 1 )
+
+[node name="SM_Wep_Shotgun_02_Trigger_04" parent="SM_Wep_Shotgun_03" index="2"]
+material/0 = ExtResource( 1 )

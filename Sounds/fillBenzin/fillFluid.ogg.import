@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/fillFluid.ogg-ac5f63aae78f3081436f1b8050930d22.oggstr"
+
+[deps]
+
+source_file="res://Sounds/fillBenzin/fillFluid.ogg"
+dest_files=[ "res://.import/fillFluid.ogg-ac5f63aae78f3081436f1b8050930d22.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

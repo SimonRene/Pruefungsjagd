@@ -1,0 +1,40 @@
+
+
+
+	[
+		{
+			"id": 1,
+			"title": "Hab die Pin vergessen...",
+			"description": "Ich muss meine Smartphone Pin herausfinden, um meine ungelesene Nachricht öffnen zu können! \nWo könnte ich einen Hinweis auf meine Pin finden?"
+		},
+		{
+			"id": 5,
+			"title": "Oh nein! Morgen ist ja Prüfung!",
+			"description": "Durch eine Nachricht auf meinem Smartphone wurde ich daran erinnert, dass morgen eine Prüfung ist... doch ich habe nichts gelernt... was soll ich nur tun? \n\nIch muss eine Lösung finden! Aber wo?"
+		},
+		{
+			"id": 10,
+			"title": "Holla die Waldfee",
+			"description": "Einer seriösen Quelle im Internet zufolge, wohnt im Wald eine Waldfee namens Holla, die dort Lösungen für alle Prüfungen verkauft. Da muss ich hin! Denn morgen ist die Prüfung und ich habe nichts gelernt und weiß gar nicht um was es geht..."
+		},
+		{	
+			"id": 30,
+			"title": "Highscore für Holla",
+			"description": "Als ich Holla die Waldfee höflich um die Lösungen für meine Prüfung gebeten habe, hat sie eine Gegenleistung verlangt.\nIch soll für sie einen Highscore in Revenge of the Fly erzielen, um so ihren Traum zu erfüllen."
+		},
+		{	
+			"id": 40,
+			"title": "Strom für die Arcade-Hütte",
+			"description": "Die Arcade-Hütte benötigt Strom."
+		},
+		{	
+			"id": 50,
+			"title": "Wo gibt es Benzin?",
+			"description": "Der Generator braucht Benzin."
+		},
+		{	
+			"id": 60,
+			"title": "Einbruch beim Dozenten",
+			"description": "Nachdem ich von Holla der Waldfee übers Ohr gehauen wurde, muss ich nun bei meinem Dozenten einbrechen und die Lösungen stehlen..."
+		},
+	]

@@ -1,0 +1,1193 @@
+[gd_scene load_steps=48 format=2]
+
+[ext_resource path="res://Font/HighlandGothicFONT.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Presets/Computer/ComputerScreen.gd" type="Script" id=2]
+[ext_resource path="res://Images/Windows_logo_1992.png" type="Texture" id=3]
+[ext_resource path="res://Images/internet-explorer-windows.png" type="Texture" id=4]
+[ext_resource path="res://Images/google-new-logo.png" type="Texture" id=5]
+[ext_resource path="res://Images/google_search_bar.png" type="Texture" id=6]
+[ext_resource path="res://Font/Arial.tres" type="DynamicFont" id=7]
+[ext_resource path="res://Font/Arial12.tres" type="DynamicFont" id=8]
+[ext_resource path="res://Presets/Computer/ScreenInternet.gd" type="Script" id=9]
+[ext_resource path="res://Presets/Computer/SearchBar.gd" type="Script" id=10]
+[ext_resource path="res://Sounds/typing01.ogg" type="AudioStream" id=11]
+[ext_resource path="res://Images/Logo_gutefrage.jpg" type="Texture" id=12]
+[ext_resource path="res://Font/Arial22.tres" type="DynamicFont" id=13]
+[ext_resource path="res://Images/ProfLayton.png" type="Texture" id=14]
+[ext_resource path="res://Font/Arial14.tres" type="DynamicFont" id=15]
+[ext_resource path="res://Images/default-profile-picture.png" type="Texture" id=16]
+[ext_resource path="res://Images/Waldfee1.jpg" type="Texture" id=17]
+[ext_resource path="res://Images/Karlo.png" type="Texture" id=18]
+[ext_resource path="res://Images/FakeWerbung/Telekom.png" type="Texture" id=19]
+[ext_resource path="res://Images/FakeWerbung/Knieschoner.png" type="Texture" id=20]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 0.639216, 0.811765, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.6, 0.6, 0.6, 0.25098 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.6, 0.6, 0.6, 0.65098 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.6, 0.6, 0.6, 0.0392157 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.890196, 0.890196, 0.890196, 0 )
+
+[sub_resource type="Animation" id=8]
+resource_name = "TypeInSearchBar"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:percent_visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+tracks/1/type = "audio"
+tracks/1/path = NodePath("AudioStreamPlayer")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 11 )
+} ],
+"times": PoolRealArray( 0.00203762 )
+}
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.6, 0.6, 0.6, 0.0705882 )
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0.6, 0.6, 0.6, 0.290196 )
+
+[sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 1, 1, 1, 1 )
+border_width_left = 1
+border_width_right = 1
+border_color = Color( 0.141176, 0.698039, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=13]
+bg_color = Color( 0.6, 0.6, 0.6, 0.121569 )
+
+[sub_resource type="StyleBoxFlat" id=14]
+bg_color = Color( 0.6, 0.6, 0.6, 0.301961 )
+
+[sub_resource type="StyleBoxFlat" id=15]
+bg_color = Color( 0, 0, 0, 0 )
+
+[sub_resource type="StyleBoxFlat" id=16]
+bg_color = Color( 1, 1, 1, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_color = Color( 0.207843, 0.619608, 0.780392, 1 )
+
+[sub_resource type="StyleBoxFlat" id=17]
+bg_color = Color( 0.262745, 0.262745, 0.262745, 1 )
+
+[sub_resource type="StyleBoxFlat" id=18]
+bg_color = Color( 0, 0, 0, 0.572549 )
+
+[sub_resource type="StyleBoxFlat" id=19]
+bg_color = Color( 0, 0, 0, 0.87451 )
+
+[sub_resource type="StyleBoxFlat" id=20]
+bg_color = Color( 0, 0, 0, 0.129412 )
+
+[sub_resource type="StyleBoxFlat" id=21]
+bg_color = Color( 0.0509804, 0.0509804, 0.0509804, 0.584314 )
+
+[sub_resource type="StyleBoxTexture" id=22]
+texture = ExtResource( 3 )
+region_rect = Rect2( 0, 0, 1200, 930 )
+modulate_color = Color( 0.698039, 0.698039, 0.698039, 1 )
+
+[sub_resource type="StyleBoxTexture" id=23]
+texture = ExtResource( 3 )
+region_rect = Rect2( 0, 0, 1200, 930 )
+modulate_color = Color( 0.5, 0.5, 0.5, 1 )
+
+[sub_resource type="StyleBoxTexture" id=24]
+texture = ExtResource( 3 )
+region_rect = Rect2( 0, 0, 1200, 930 )
+
+[sub_resource type="StyleBoxTexture" id=25]
+texture = ExtResource( 4 )
+region_rect = Rect2( 0, 0, 480, 480 )
+modulate_color = Color( 0.784314, 0.784314, 0.784314, 1 )
+
+[sub_resource type="StyleBoxTexture" id=26]
+texture = ExtResource( 4 )
+region_rect = Rect2( 0, 0, 480, 480 )
+modulate_color = Color( 0.517647, 0.517647, 0.517647, 1 )
+
+[sub_resource type="StyleBoxTexture" id=27]
+texture = ExtResource( 4 )
+region_rect = Rect2( 0, 0, 480, 480 )
+
+[node name="ComputerScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Monitor" type="Panel" parent="."]
+anchor_left = 0.148438
+anchor_top = 0.0138889
+anchor_right = 0.851563
+anchor_bottom = 0.986111
+rect_min_size = Vector2( 800, 600 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="ScreenDesktop" type="Panel" parent="Monitor"]
+anchor_left = 0.0555556
+anchor_top = 0.0714286
+anchor_right = 0.944444
+anchor_bottom = 0.928571
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="ScreenInternet" type="Control" parent="Monitor"]
+visible = false
+anchor_right = 0.0444444
+anchor_bottom = 0.0571429
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Google" type="Panel" parent="Monitor/ScreenInternet"]
+anchor_left = 1.25
+anchor_top = 1.25
+anchor_right = 21.25
+anchor_bottom = 16.25
+custom_styles/panel = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Logo" type="TextureRect" parent="Monitor/ScreenInternet/Google"]
+anchor_left = 0.5
+anchor_top = 0.13
+anchor_right = 0.5
+anchor_bottom = 0.929
+margin_left = -203.252
+margin_top = -0.252998
+margin_right = 1396.75
+margin_bottom = 139.347
+rect_scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SearchArea" type="TextureRect" parent="Monitor/ScreenInternet/Google"]
+anchor_left = 0.5
+anchor_top = 0.13
+anchor_right = 0.5
+anchor_bottom = 0.929
+margin_left = -298.0
+margin_top = 155.0
+margin_right = 318.0
+margin_bottom = -182.4
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="searchButton" type="Button" parent="Monitor/ScreenInternet/Google/SearchArea"]
+margin_left = 169.0
+margin_top = 92.0
+margin_right = 293.0
+margin_bottom = 126.0
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="feelingLuckyButton" type="Button" parent="Monitor/ScreenInternet/Google/SearchArea"]
+margin_left = 307.0
+margin_top = 92.0
+margin_right = 431.0
+margin_bottom = 126.0
+custom_styles/hover = SubResource( 3 )
+custom_styles/pressed = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+
+[node name="SearchBar" type="LineEdit" parent="Monitor/ScreenInternet/Google/SearchArea"]
+margin_left = 53.0
+margin_top = 19.5403
+margin_right = 574.0
+margin_bottom = 58.5403
+custom_styles/read_only = SubResource( 6 )
+custom_styles/normal = SubResource( 7 )
+custom_fonts/font = ExtResource( 7 )
+custom_colors/cursor_color = Color( 0.137255, 0.137255, 0.137255, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_uneditable = Color( 0.313726, 0.313726, 0.313726, 1 )
+editable = false
+context_menu_enabled = false
+shortcut_keys_enabled = false
+selecting_enabled = false
+script = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Monitor/ScreenInternet/Google/SearchArea/SearchBar"]
+anchor_left = 0.019
+anchor_top = 0.169
+anchor_right = 0.019
+anchor_bottom = 0.169
+margin_left = 0.100999
+margin_top = 1.86869
+margin_right = 293.101
+margin_bottom = 25.8687
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Hilfe morgen Prüfung!!! Was tun?"
+percent_visible = 0.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Monitor/ScreenInternet/Google/SearchArea/SearchBar/Label"]
+anims/TypeInSearchBar = SubResource( 8 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Monitor/ScreenInternet/Google/SearchArea/SearchBar/Label"]
+stream = ExtResource( 11 )
+volume_db = -4.86
+
+[node name="GoogleSearchedPruefung" type="Panel" parent="Monitor/ScreenInternet"]
+visible = false
+anchor_left = 1.25
+anchor_top = 1.25
+anchor_right = 21.25
+anchor_bottom = 16.25
+custom_styles/panel = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Logo" type="TextureRect" parent="Monitor/ScreenInternet/GoogleSearchedPruefung"]
+anchor_top = 0.012
+anchor_bottom = 0.136
+margin_left = 1.02368
+margin_top = -6.54369
+margin_right = 1601.02
+margin_bottom = 538.056
+rect_scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GooglePageBtn" type="Button" parent="Monitor/ScreenInternet/GoogleSearchedPruefung/Logo"]
+anchor_left = 0.0425
+anchor_top = 0.0161551
+anchor_right = 0.941875
+anchor_bottom = 0.93538
+custom_styles/hover = SubResource( 9 )
+custom_styles/pressed = SubResource( 10 )
+custom_styles/normal = SubResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="result01" type="Panel" parent="Monitor/ScreenInternet/GoogleSearchedPruefung"]
+anchor_left = 0.0325
+anchor_top = 0.1
+anchor_right = 0.72
+anchor_bottom = 0.266667
+margin_bottom = -1.52588e-05
+custom_styles/panel = SubResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Result01Button" type="Button" parent="Monitor/ScreenInternet/GoogleSearchedPruefung/result01"]
+anchor_right = 0.998182
+anchor_bottom = 0.98
+custom_styles/hover = SubResource( 13 )
+custom_styles/pressed = SubResource( 14 )
+custom_styles/normal = SubResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="Monitor/ScreenInternet/GoogleSearchedPruefung/result01"]
+anchor_left = 0.0117897
+anchor_right = 0.784517
+anchor_bottom = 0.19
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0.137255, 0.831373, 1 )
+text = "Hilfe morgen Prüfung!!11elf wie jetzt schnell alles lernen???"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label2" type="Label" parent="Monitor/ScreenInternet/GoogleSearchedPruefung/result01"]
+anchor_left = 0.0103607
+anchor_top = 0.203017
+anchor_right = 0.975815
+anchor_bottom = 0.903017
+margin_top = -7.62939e-06
+margin_bottom = -7.62939e-06
+custom_fonts/font = ExtResource( 8 )
+custom_colors/font_color = Color( 0.454902, 0.454902, 0.454902, 1 )
+text = "Hilfe morgen Prüfung!!11elf wie jetzt schnell alles lernen???Hilfe morgen Prüfung!!11elf wie jetzt schnell alles lernen???Hilfe morgen Prüfung!!11elf wie jetzt schnell alles lernen???Hilfe morgen Prüfung!!11elf wie jetzt schnell alles lernen???Hilfe morgen Prüfung!!11elf wie jetzt schnell alles lernen???Hilfe morgen Prüfung!!11elf wie jetzt schnell alles lernen???"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="result02" type="Panel" parent="Monitor/ScreenInternet/GoogleSearchedPruefung"]
+anchor_left = 0.0325
+anchor_top = 0.266667
+anchor_right = 0.72
+anchor_bottom = 0.433333
+margin_top = -1.52588e-05
+custom_styles/panel = SubResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Result02Button" type="Button" parent="Monitor/ScreenInternet/GoogleSearchedPruefung/result02"]
+anchor_right = 0.998182
+anchor_bottom = 0.98
+custom_styles/hover = SubResource( 13 )
+custom_styles/pressed = SubResource( 14 )
+custom_styles/normal = SubResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="Monitor/ScreenInternet/GoogleSearchedPruefung/result02"]
+anchor_left = 0.0117618
+anchor_top = 0.0500136
+anchor_right = 0.881798
+anchor_bottom = 0.26054
+margin_right = -221.0
+margin_bottom = -5.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0.0666667, 0.956863, 1 )
+text = "11 Tipps für die Prüfungszeit: 1. Lernen 2. Lernen 3. Lernen 4. Lern..."
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label2" type="Label" parent="Monitor/ScreenInternet/GoogleSearchedPruefung/result02"]
+anchor_left = 0.0109091
+anchor_top = 0.27
+anchor_right = 1.36727
+anchor_bottom = 1.02
+margin_right = -221.0
+margin_bottom = -5.0
+custom_fonts/font = ExtResource( 8 )
+custom_colors/font_color = Color( 0.439216, 0.439216, 0.439216, 1 )
+text = "1. Lernen 2. Lernen 3. Lernen 4. Lernen 5. Lernen 6. Lernen 7. Lernen 8. Lernen 9. Lernen
+10. Lernen 11. Lernen 12. Lernen 13. Lernen 14. Lernen 15. Lernen 16. Lernen 17. Lernen
+18. Lernen 19. Lernen 20. Lernen 21. Lernen 22. Lernen 23. Lernen 24. Lernen 25. Lernen
+26. Lernen 27. Lernen  ----   Und den 28. Tipp erhälst du wenn du KLICKST!!!!"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="result03" type="Panel" parent="Monitor/ScreenInternet/GoogleSearchedPruefung"]
+anchor_left = 0.0325
+anchor_top = 0.433333
+anchor_right = 0.72
+anchor_bottom = 0.6
+custom_styles/panel = SubResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Result03Button" type="Button" parent="Monitor/ScreenInternet/GoogleSearchedPruefung/result03"]
+anchor_right = 0.998182
+anchor_bottom = 0.98
+custom_styles/hover = SubResource( 13 )
+custom_styles/pressed = SubResource( 14 )
+custom_styles/normal = SubResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="Monitor/ScreenInternet/GoogleSearchedPruefung/result03"]
+anchor_left = 0.0117618
+anchor_top = 0.0500136
+anchor_right = 0.881798
+anchor_bottom = 0.26054
+margin_right = -221.0
+margin_bottom = -5.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0.0666667, 0.956863, 1 )
+text = "Lernforschung: Tipps die das Lernen leichter machen  -  Morgenpost"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label2" type="Label" parent="Monitor/ScreenInternet/GoogleSearchedPruefung/result03"]
+anchor_left = 0.0110175
+anchor_top = 0.272053
+anchor_right = 1.36738
+anchor_bottom = 1.03205
+margin_right = -221.0
+margin_bottom = -5.0
+custom_fonts/font = ExtResource( 8 )
+custom_colors/font_color = Color( 0.439216, 0.439216, 0.439216, 1 )
+text = "Vor dem Einschlafen lernen wir effektiver, Aufgeschriebenes behält man besser - heißt es.
+Stimmt das?
+Diese und viele andere Fragen beantwortet unser Lernprofi Prof. Dr. Dr. Dr. Hugo Maier"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="result04" type="Panel" parent="Monitor/ScreenInternet/GoogleSearchedPruefung"]
+anchor_left = 0.0325
+anchor_top = 0.6
+anchor_right = 0.72
+anchor_bottom = 0.766667
+margin_top = 3.05176e-05
+custom_styles/panel = SubResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Result04Button" type="Button" parent="Monitor/ScreenInternet/GoogleSearchedPruefung/result04"]
+anchor_right = 0.998182
+anchor_bottom = 0.98
+custom_styles/hover = SubResource( 13 )
+custom_styles/pressed = SubResource( 14 )
+custom_styles/normal = SubResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="Monitor/ScreenInternet/GoogleSearchedPruefung/result04"]
+anchor_left = 0.0117618
+anchor_top = 0.0500136
+anchor_right = 0.881798
+anchor_bottom = 0.26054
+margin_right = -221.0
+margin_bottom = -5.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0.0666667, 0.956863, 1 )
+text = "kostenlos DOWNLOADEN! - Prüfung leicht bestehen ohne Lernen!"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label2" type="Label" parent="Monitor/ScreenInternet/GoogleSearchedPruefung/result04"]
+anchor_left = 0.0110175
+anchor_top = 0.272053
+anchor_right = 1.36738
+anchor_bottom = 1.03205
+margin_right = -221.0
+margin_bottom = -5.0
+custom_fonts/font = ExtResource( 8 )
+custom_colors/font_color = Color( 0.439216, 0.439216, 0.439216, 1 )
+text = "Lade dir einfach unser super Programm herunter und installiere es, dann klappe es auch mit der Prüfung! GANZ BESTIMMT!
+Ps. eventuell musst du dein Anti-Viren-Programm vorübergehend abschalten. Aber das ist ganz normal!"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="result05" type="Panel" parent="Monitor/ScreenInternet/GoogleSearchedPruefung"]
+anchor_left = 0.0325
+anchor_top = 0.766667
+anchor_right = 0.72
+anchor_bottom = 0.933333
+custom_styles/panel = SubResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Result05Button" type="Button" parent="Monitor/ScreenInternet/GoogleSearchedPruefung/result05"]
+anchor_right = 0.998182
+anchor_bottom = 0.98
+custom_styles/hover = SubResource( 13 )
+custom_styles/pressed = SubResource( 14 )
+custom_styles/normal = SubResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="Monitor/ScreenInternet/GoogleSearchedPruefung/result05"]
+anchor_left = 0.0117618
+anchor_top = 0.0500136
+anchor_right = 0.881798
+anchor_bottom = 0.26054
+margin_right = -221.0
+margin_bottom = -5.0
+custom_fonts/font = ExtResource( 7 )
+custom_colors/font_color = Color( 0, 0.0666667, 0.956863, 1 )
+text = "Wie du Spicker versteckts"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label2" type="Label" parent="Monitor/ScreenInternet/GoogleSearchedPruefung/result05"]
+anchor_left = 0.0110175
+anchor_top = 0.272053
+anchor_right = 1.36738
+anchor_bottom = 1.03205
+margin_right = -221.0
+margin_bottom = -5.0
+custom_fonts/font = ExtResource( 8 )
+custom_colors/font_color = Color( 0.439216, 0.439216, 0.439216, 1 )
+text = "Wir zeigen dir wie du deine Spicker sicher und unauffällig versteckst.
+Alle unsere Techniken wurde schon tausende Male getestet und haben nur positives Feedback erhalten! Klicke nun um die ultimativen Tricks zu erhalten!"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="GuteFrage" type="Panel" parent="Monitor/ScreenInternet"]
+visible = false
+anchor_left = 1.25
+anchor_top = 1.25
+anchor_right = 21.25
+anchor_bottom = 16.25
+custom_styles/panel = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Logo" type="TextureRect" parent="Monitor/ScreenInternet/GuteFrage"]
+anchor_top = 0.012
+anchor_bottom = 0.136
+margin_left = 1.0
+margin_top = -6.2
+margin_right = 919.0
+margin_bottom = 199.4
+rect_scale = Vector2( 0.24, 0.24 )
+texture = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GooglePageBtn" type="Button" parent="Monitor/ScreenInternet/GuteFrage/Logo"]
+visible = false
+anchor_left = 0.0425
+anchor_top = 0.0161551
+anchor_right = 0.941875
+anchor_bottom = 0.93538
+custom_styles/hover = SubResource( 9 )
+custom_styles/pressed = SubResource( 10 )
+custom_styles/normal = SubResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="result01" type="Panel" parent="Monitor/ScreenInternet/GuteFrage"]
+anchor_left = 0.0325
+anchor_top = 0.0999999
+anchor_right = 0.766251
+anchor_bottom = 0.266667
+margin_bottom = -1.52588e-05
+custom_styles/panel = SubResource( 16 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Result01Button" type="Button" parent="Monitor/ScreenInternet/GuteFrage/result01"]
+visible = false
+anchor_right = 0.998182
+anchor_bottom = 0.98
+custom_styles/hover = SubResource( 13 )
+custom_styles/pressed = SubResource( 14 )
+custom_styles/normal = SubResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="Monitor/ScreenInternet/GuteFrage/result01"]
+anchor_left = 0.0117897
+anchor_right = 0.784517
+anchor_bottom = 0.19
+custom_fonts/font = ExtResource( 13 )
+custom_colors/font_color = Color( 0, 0.137255, 0.831373, 1 )
+text = "Hilfe morgen Prüfung!!11elf wie jetzt schnell alles lernen???"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label2" type="Label" parent="Monitor/ScreenInternet/GuteFrage/result01"]
+anchor_left = 0.0509091
+anchor_top = 0.299999
+anchor_right = 1.01636
+anchor_bottom = 0.479999
+margin_top = -7.62939e-06
+margin_bottom = -7.62939e-06
+custom_fonts/font = ExtResource( 8 )
+custom_colors/font_color = Color( 0.454902, 0.454902, 0.454902, 1 )
+text = "Hilfe!!!! ich habe morgen Prüfung. Wie kann ich jetzt noch alles lernen??? 0_O
+
+Danke"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label3" type="Label" parent="Monitor/ScreenInternet/GuteFrage/result01"]
+anchor_left = 0.413892
+anchor_top = 0.479999
+anchor_right = 0.992074
+anchor_bottom = 0.939998
+margin_top = -7.62939e-06
+margin_bottom = -7.62939e-06
+custom_fonts/font = ExtResource( 8 )
+custom_colors/font_color = Color( 0.454902, 0.454902, 0.454902, 1 )
+text = "Frage von xXxQUiCKKSC00perZzZ"
+align = 2
+valign = 2
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="result02" type="Panel" parent="Monitor/ScreenInternet/GuteFrage"]
+anchor_left = 0.0325
+anchor_top = 0.266667
+anchor_right = 0.766251
+anchor_bottom = 0.433333
+margin_top = -1.52588e-05
+custom_styles/panel = SubResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Result02Button" type="Button" parent="Monitor/ScreenInternet/GuteFrage/result02"]
+anchor_right = 0.998182
+anchor_bottom = 0.98
+custom_styles/hover = SubResource( 13 )
+custom_styles/pressed = SubResource( 14 )
+custom_styles/normal = SubResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="Monitor/ScreenInternet/GuteFrage/result02"]
+anchor_left = 0.0117618
+anchor_top = 0.0500136
+anchor_right = 0.881798
+anchor_bottom = 0.26054
+margin_right = -221.0
+margin_bottom = -5.0
+custom_fonts/font = ExtResource( 15 )
+custom_colors/font_color = Color( 0, 0.0666667, 0.956863, 1 )
+text = "Ich gebe dir einen wichtigen Tipp:"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label2" type="Label" parent="Monitor/ScreenInternet/GuteFrage/result02"]
+anchor_left = 0.0109091
+anchor_top = 0.27
+anchor_right = 1.36727
+anchor_bottom = 1.02
+margin_right = -221.0
+margin_bottom = -5.0
+custom_fonts/font = ExtResource( 8 )
+custom_colors/font_color = Color( 0.439216, 0.439216, 0.439216, 1 )
+text = "Exmatrikulation du LAPPEN!!!"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label3" type="Label" parent="Monitor/ScreenInternet/GuteFrage/result02"]
+anchor_left = 0.0109091
+anchor_top = 0.27
+anchor_right = 0.991
+anchor_bottom = 1.02
+margin_right = -0.129578
+margin_bottom = -5.0
+custom_fonts/font = ExtResource( 8 )
+custom_colors/font_color = Color( 0.439216, 0.439216, 0.439216, 1 )
+text = "Antwort von Prof. Layton"
+align = 2
+valign = 2
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="TextureRect" type="TextureRect" parent="Monitor/ScreenInternet/GuteFrage/result02/Label3"]
+anchor_left = 0.997698
+anchor_top = 0.760905
+anchor_right = 0.997698
+anchor_bottom = 0.760905
+margin_left = -48.0
+margin_top = -48.0
+margin_right = 192.0
+margin_bottom = 192.0
+rect_scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="ThoughtBox" type="Panel" parent="Monitor/ScreenInternet/GuteFrage/result02"]
+visible = false
+anchor_left = 0.27598
+anchor_top = 0.44
+anchor_right = 0.647359
+anchor_bottom = 0.84
+custom_styles/panel = SubResource( 17 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="ThoughtText" type="Label" parent="Monitor/ScreenInternet/GuteFrage/result02/ThoughtBox"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 7 )
+text = "Ne, das ergibt keinen Sinn..."
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="result03" type="Panel" parent="Monitor/ScreenInternet/GuteFrage"]
+anchor_left = 0.0325
+anchor_top = 0.433333
+anchor_right = 0.766251
+anchor_bottom = 0.6
+margin_bottom = 3.05176e-05
+custom_styles/panel = SubResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Result03Button" type="Button" parent="Monitor/ScreenInternet/GuteFrage/result03"]
+anchor_right = 0.998182
+anchor_bottom = 0.98
+custom_styles/hover = SubResource( 13 )
+custom_styles/pressed = SubResource( 14 )
+custom_styles/normal = SubResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="Monitor/ScreenInternet/GuteFrage/result03"]
+anchor_left = 0.0117618
+anchor_top = 0.0500136
+anchor_right = 0.881798
+anchor_bottom = 0.26054
+margin_right = -221.0
+margin_bottom = -5.0
+custom_fonts/font = ExtResource( 15 )
+custom_colors/font_color = Color( 0, 0.0666667, 0.956863, 1 )
+text = "Jetzt mal ehrlich..."
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label2" type="Label" parent="Monitor/ScreenInternet/GuteFrage/result03"]
+anchor_left = 0.0109091
+anchor_top = 0.27
+anchor_right = 1.36727
+anchor_bottom = 1.02
+margin_right = -221.0
+margin_bottom = -5.0
+custom_fonts/font = ExtResource( 8 )
+custom_colors/font_color = Color( 0.439216, 0.439216, 0.439216, 1 )
+text = "Lern halt früher!"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label3" type="Label" parent="Monitor/ScreenInternet/GuteFrage/result03"]
+anchor_left = 0.0109091
+anchor_top = 0.27
+anchor_right = 0.991
+anchor_bottom = 1.02
+margin_right = -0.129578
+margin_bottom = -5.0
+custom_fonts/font = ExtResource( 8 )
+custom_colors/font_color = Color( 0.439216, 0.439216, 0.439216, 1 )
+text = "Antwort von TopStudent"
+align = 2
+valign = 2
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="TextureRect" type="TextureRect" parent="Monitor/ScreenInternet/GuteFrage/result03/Label3"]
+anchor_left = 0.997698
+anchor_top = 0.760905
+anchor_right = 0.997698
+anchor_bottom = 0.760905
+margin_left = -48.0
+margin_top = -48.0
+margin_right = 192.0
+margin_bottom = 192.0
+rect_scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 16 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="ThoughtBox2" type="Panel" parent="Monitor/ScreenInternet/GuteFrage/result03"]
+visible = false
+anchor_left = 0.27598
+anchor_top = 0.45816
+anchor_right = 0.647359
+anchor_bottom = 0.85816
+custom_styles/panel = SubResource( 17 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="ThoughtText" type="Label" parent="Monitor/ScreenInternet/GuteFrage/result03/ThoughtBox2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 7 )
+text = "zu spät...."
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="result04" type="Panel" parent="Monitor/ScreenInternet/GuteFrage"]
+anchor_left = 0.0325
+anchor_top = 0.6
+anchor_right = 0.766251
+anchor_bottom = 0.766666
+custom_styles/panel = SubResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Result04Button" type="Button" parent="Monitor/ScreenInternet/GuteFrage/result04"]
+anchor_right = 0.998182
+anchor_bottom = 0.98
+custom_styles/hover = SubResource( 13 )
+custom_styles/pressed = SubResource( 14 )
+custom_styles/normal = SubResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="Monitor/ScreenInternet/GuteFrage/result04"]
+anchor_left = 0.0117618
+anchor_top = 0.0500136
+anchor_right = 0.881798
+anchor_bottom = 0.26054
+margin_right = -221.0
+margin_bottom = -5.0
+custom_fonts/font = ExtResource( 15 )
+custom_colors/font_color = Color( 0, 0.0666667, 0.956863, 1 )
+text = "Schau doch bei Holla der Waldfee vorbei!"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label2" type="Label" parent="Monitor/ScreenInternet/GuteFrage/result04"]
+anchor_left = 0.0109091
+anchor_top = 0.27
+anchor_right = 1.36727
+anchor_bottom = 1.02
+margin_right = -221.0
+margin_bottom = -5.0
+custom_fonts/font = ExtResource( 8 )
+custom_colors/font_color = Color( 0.439216, 0.439216, 0.439216, 1 )
+text = "Die hat immer Prüfungslösungen auf Lager!
+Sie wohnt im Wald. Komm vorbei!
+Es lohnt sich!"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label3" type="Label" parent="Monitor/ScreenInternet/GuteFrage/result04"]
+anchor_left = 0.0109091
+anchor_top = 0.27
+anchor_right = 0.991
+anchor_bottom = 1.02
+margin_right = -0.129578
+margin_bottom = -5.0
+custom_fonts/font = ExtResource( 8 )
+custom_colors/font_color = Color( 0.439216, 0.439216, 0.439216, 1 )
+text = "Antwort von H. d. W."
+align = 2
+valign = 2
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="TextureRect" type="TextureRect" parent="Monitor/ScreenInternet/GuteFrage/result04/Label3"]
+anchor_left = 0.995
+anchor_top = 0.784
+anchor_right = 0.995
+anchor_bottom = 0.784
+margin_left = -41.9813
+margin_top = -48.0113
+margin_right = 658.019
+margin_bottom = 751.989
+rect_scale = Vector2( 0.06, 0.06 )
+texture = ExtResource( 17 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="ThoughtBox3" type="Panel" parent="Monitor/ScreenInternet/GuteFrage/result04"]
+visible = false
+anchor_left = 0.347785
+anchor_top = 0.47934
+anchor_right = 0.719166
+anchor_bottom = 0.87934
+custom_styles/panel = SubResource( 17 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="ThoughtText" type="Label" parent="Monitor/ScreenInternet/GuteFrage/result04/ThoughtBox3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 7 )
+text = "Da schau ich mal vorbei!"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="result05" type="Panel" parent="Monitor/ScreenInternet/GuteFrage"]
+anchor_left = 0.0325
+anchor_top = 0.766666
+anchor_right = 0.766251
+anchor_bottom = 0.933333
+custom_styles/panel = SubResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Result05Button" type="Button" parent="Monitor/ScreenInternet/GuteFrage/result05"]
+anchor_right = 0.998182
+anchor_bottom = 0.98
+custom_styles/hover = SubResource( 13 )
+custom_styles/pressed = SubResource( 14 )
+custom_styles/normal = SubResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="Monitor/ScreenInternet/GuteFrage/result05"]
+anchor_left = 0.0117618
+anchor_top = 0.0500136
+anchor_right = 0.881798
+anchor_bottom = 0.26054
+margin_right = -221.0
+margin_bottom = -5.0
+custom_fonts/font = ExtResource( 15 )
+custom_colors/font_color = Color( 0, 0.0666667, 0.956863, 1 )
+text = "Klau einfach die Lösungen!"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label2" type="Label" parent="Monitor/ScreenInternet/GuteFrage/result05"]
+anchor_left = 0.0109091
+anchor_top = 0.27
+anchor_right = 1.36727
+anchor_bottom = 1.02
+margin_right = -221.0
+margin_bottom = -5.0
+custom_fonts/font = ExtResource( 8 )
+custom_colors/font_color = Color( 0.439216, 0.439216, 0.439216, 1 )
+text = "Brech doch einfach bei deinem Dozenten ein und Klau die Lösungen!!!
+Ist doch nicht so schwer!"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label3" type="Label" parent="Monitor/ScreenInternet/GuteFrage/result05"]
+anchor_left = 0.0109091
+anchor_top = 0.27
+anchor_right = 0.991
+anchor_bottom = 1.02
+margin_right = -0.129578
+margin_bottom = -5.0
+custom_fonts/font = ExtResource( 8 )
+custom_colors/font_color = Color( 0.439216, 0.439216, 0.439216, 1 )
+text = "Antwort von Kater Karlo"
+align = 2
+valign = 2
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="TextureRect" type="TextureRect" parent="Monitor/ScreenInternet/GuteFrage/result05/Label3"]
+anchor_left = 0.992922
+anchor_top = 0.719379
+anchor_right = 0.992922
+anchor_bottom = 0.719379
+margin_left = -34.4459
+margin_top = -53.6251
+margin_right = 311.554
+margin_bottom = 482.375
+rect_scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 18 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="ThoughtBox4" type="Panel" parent="Monitor/ScreenInternet/GuteFrage/result05"]
+visible = false
+anchor_left = 0.32368
+anchor_top = 0.49
+anchor_right = 0.824531
+anchor_bottom = 0.89
+custom_styles/panel = SubResource( 17 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="ThoughtText" type="Label" parent="Monitor/ScreenInternet/GuteFrage/result05/ThoughtBox4"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 8 )
+text = "zu gefährlich...
+kein Bock schon wieder im Kanst zu landen"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Monitor/ScreenInternet/GuteFrage"]
+anchor_left = 0.77125
+anchor_top = 0.163333
+anchor_right = 0.962501
+anchor_bottom = 0.377333
+margin_right = 357.0
+margin_bottom = 299.6
+rect_scale = Vector2( 0.35, 0.35 )
+texture = ExtResource( 19 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="TextureRect2" type="TextureRect" parent="Monitor/ScreenInternet/GuteFrage"]
+anchor_left = 0.76875
+anchor_top = 0.531666
+anchor_right = 0.956351
+anchor_bottom = 0.780866
+margin_right = 385.92
+margin_bottom = 384.48
+rect_scale = Vector2( 0.34, 0.34 )
+texture = ExtResource( 20 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Stand" type="Panel" parent="Monitor"]
+anchor_left = 0.377778
+anchor_top = 0.97552
+anchor_right = 0.622222
+anchor_bottom = 1.03266
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Button" type="Button" parent="Monitor"]
+anchor_left = 1.01
+anchor_top = 0.00285714
+anchor_right = 1.07667
+anchor_bottom = 0.0885714
+margin_right = -6.10352e-05
+custom_styles/hover = SubResource( 18 )
+custom_styles/pressed = SubResource( 19 )
+custom_styles/normal = SubResource( 20 )
+custom_fonts/font = ExtResource( 1 )
+text = "X"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="TaskBar" type="Panel" parent="Monitor"]
+anchor_left = 0.0555556
+anchor_top = 0.871429
+anchor_right = 0.944444
+anchor_bottom = 0.928572
+custom_styles/panel = SubResource( 21 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="DesktopButton" type="Button" parent="Monitor/TaskBar"]
+anchor_left = 0.00125
+anchor_top = 0.025
+anchor_right = 0.06125
+anchor_bottom = 0.975
+custom_styles/hover = SubResource( 22 )
+custom_styles/pressed = SubResource( 23 )
+custom_styles/normal = SubResource( 24 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="InternetButton" type="Button" parent="Monitor/TaskBar"]
+anchor_left = 0.075
+anchor_right = 0.125
+anchor_bottom = 1.0
+custom_styles/hover = SubResource( 25 )
+custom_styles/pressed = SubResource( 26 )
+custom_styles/normal = SubResource( 27 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+[connection signal="pressed" from="Monitor/ScreenInternet/Google/SearchArea/searchButton" to="Monitor/ScreenInternet" method="_on_searchButton_pressed"]
+[connection signal="focus_entered" from="Monitor/ScreenInternet/Google/SearchArea/SearchBar" to="Monitor/ScreenInternet/Google/SearchArea/SearchBar" method="_on_SearchBar_focus_entered"]
+[connection signal="pressed" from="Monitor/ScreenInternet/GoogleSearchedPruefung/Logo/GooglePageBtn" to="Monitor/ScreenInternet" method="_on_GooglePageBtn_pressed"]
+[connection signal="pressed" from="Monitor/ScreenInternet/GoogleSearchedPruefung/result01/Result01Button" to="Monitor/ScreenInternet" method="_on_GuteFrage_pressed"]
+[connection signal="pressed" from="Monitor/ScreenInternet/GuteFrage/Logo/GooglePageBtn" to="Monitor/ScreenInternet" method="_on_GooglePageBtn_pressed"]
+[connection signal="pressed" from="Monitor/ScreenInternet/GuteFrage/result02/Result02Button" to="Monitor/ScreenInternet" method="_on_Result02Button_pressed"]
+[connection signal="pressed" from="Monitor/ScreenInternet/GuteFrage/result03/Result03Button" to="Monitor/ScreenInternet" method="_on_Result03Button_pressed"]
+[connection signal="pressed" from="Monitor/ScreenInternet/GuteFrage/result04/Result04Button" to="Monitor/ScreenInternet" method="_on_Result04Button_pressed"]
+[connection signal="pressed" from="Monitor/ScreenInternet/GuteFrage/result05/Result05Button" to="Monitor/ScreenInternet" method="_on_Result05Button_pressed"]
+[connection signal="pressed" from="Monitor/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Monitor/TaskBar/DesktopButton" to="." method="_on_DesktopButton_pressed"]
+[connection signal="pressed" from="Monitor/TaskBar/InternetButton" to="." method="_on_InternetButton_pressed"]

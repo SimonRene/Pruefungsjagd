@@ -1,0 +1,106 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Objects/DozentLevel/Parts/Wall_Door_noDoor.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Objects/DozentLevel/Props/Door.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Objects/DozentLevel/Parts/Wall_01.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Objects/DozentLevel/Parts/Wall_Door.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Objects/DozentLevel/Parts/Roof_01.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Objects/DozentLevel/Parts/Floor_01.tscn" type="PackedScene" id=6]
+
+[node name="Gang_01" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, 1, 0, -1, -1.62921e-07, 0, 0, 0 )
+
+[node name="Wall_01" parent="." instance=ExtResource( 3 )]
+transform = Transform( -1, -4.87566e-06, 1.62921e-07, 4.87566e-06, -1, -1.62921e-07, 1.62922e-07, -1.6292e-07, 1, -9.53674e-07, 10, 1.62921e-06 )
+
+[node name="Wall_12" parent="." instance=ExtResource( 3 )]
+transform = Transform( -1, -4.87566e-06, 1.62921e-07, 4.87566e-06, -1, -1.62921e-07, 1.62922e-07, -1.6292e-07, 1, -5, 10, 1.62921e-06 )
+
+[node name="Wall_13" parent="." instance=ExtResource( 3 )]
+transform = Transform( 4.91937e-06, -1, 2.13002e-14, 1, 4.91937e-06, -3.25842e-07, 3.25842e-07, 1.61149e-12, 1, -10.1504, 15, 2.44381e-06 )
+
+[node name="Wall_14" parent="." instance=ExtResource( 3 )]
+transform = Transform( 4.91937e-06, -1, 2.13002e-14, 1, 4.91937e-06, -3.25842e-07, 3.25842e-07, 1.61149e-12, 1, -10.1504, 10, 1.62921e-06 )
+
+[node name="Wall_08" parent="." instance=ExtResource( 3 )]
+transform = Transform( -4.83194e-06, 1, -2.8486e-14, -1, -4.83194e-06, 0, 0, 2.84861e-14, 1, 5, 4.76837e-07, 7.76868e-14 )
+
+[node name="Floor01" parent="." instance=ExtResource( 6 )]
+
+[node name="Wall_02" parent="." instance=ExtResource( 3 )]
+transform = Transform( 4.91937e-06, -1, 1.4243e-14, 1, 4.91937e-06, -3.25842e-07, 3.25842e-07, 1.61718e-12, 1, -2.18557e-07, 5.16476, 8.41448e-07 )
+
+[node name="Wall_07" parent="." instance=ExtResource( 3 )]
+transform = Transform( -4.83194e-06, 1, -2.8486e-14, -1, -4.83194e-06, 0, 0, 2.84861e-14, 1, 5, 5, 8.14605e-07 )
+
+[node name="Floor02" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 8.14605e-07 )
+
+[node name="Wall_04" parent="." instance=ExtResource( 3 )]
+transform = Transform( 4.91937e-06, -1, 1.4243e-14, 1, 4.91937e-06, -3.25842e-07, 3.25842e-07, 1.61718e-12, 1, 2.18557e-07, 0.16476, 2.68429e-08 )
+
+[node name="Wall_10" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 4.78823e-06, -1.62921e-07, -4.78823e-06, 1, -1.62921e-07, 1.6292e-07, 1.62922e-07, 1, -0.005, 15.157, 0 )
+
+[node name="Floor04" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 1.62921e-06 )
+
+[node name="Wall_03" parent="." instance=ExtResource( 3 )]
+transform = Transform( 4.91937e-06, -1, 1.4243e-14, 1, 4.91937e-06, -3.25842e-07, 3.25842e-07, 1.61718e-12, 1, 6.55671e-07, -4.83524, -7.87762e-07 )
+
+[node name="Wall_05" parent="." instance=ExtResource( 3 )]
+transform = Transform( -4.83194e-06, 1, -2.8486e-14, -1, -4.83194e-06, 0, 0, 2.84861e-14, 1, 5, 15, 2.44381e-06 )
+
+[node name="Wall_09" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 4.78823e-06, -1.62921e-07, -4.78823e-06, 1, -1.62921e-07, 1.6292e-07, 1.62922e-07, 1, -5.00424, 15.1566, 2.46933e-06 )
+
+[node name="Wall_11" parent="." instance=ExtResource( 3 )]
+transform = Transform( -4.83194e-06, 1, -3.55111e-14, -1, -4.83194e-06, 0, 0, 2.27935e-14, 1, -4.84798, 20.1566, 3.28394e-06 )
+
+[node name="Floor03" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1.02, 0, 0, 0, 1.012, 0, 0, 0, 1, 0, 15.06, 0 )
+
+[node name="Floor05" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 15, 2.44381e-06 )
+
+[node name="Floor06" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 15, 2.44381e-06 )
+
+[node name="Floor07" parent="." instance=ExtResource( 6 )]
+transform = Transform( -4.37114e-08, 1, 1.62921e-07, -1, -4.37114e-08, -1.62921e-07, -1.62921e-07, -1.62921e-07, 1, -5, 20, 3.25842e-06 )
+
+[node name="Wall_Door" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4.83691, 2.657e-08 )
+
+[node name="Wall_Door_noDoor" parent="." instance=ExtResource( 1 )]
+transform = Transform( -1, -2.16166e-06, -1.62921e-07, 2.16166e-06, -1, -1.62921e-07, -1.62921e-07, -1.62921e-07, 1, -5, 20, 3.25842e-06 )
+
+[node name="Wall_Door_noDoor2" parent="." instance=ExtResource( 1 )]
+transform = Transform( -2.11795e-06, 1, 7.1215e-15, -1, -2.11795e-06, -3.25842e-07, -3.25842e-07, -3.45058e-13, 1, 5, 10, 1.62921e-06 )
+
+[node name="SM_Env_Door_1498" parent="Wall_Door_noDoor2" instance=ExtResource( 2 )]
+transform = Transform( -1, 8.74227e-08, -3.25842e-07, -8.74227e-08, -1, -7.18603e-13, -3.25843e-07, 1.4243e-14, 1, 3.068, -0.118, 0 )
+
+[node name="Sign" type="Spatial" parent="Wall_Door_noDoor2/SM_Env_Door_1498"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.52369, 2.86102e-06, 1.79414 )
+
+[node name="SM_Env_Ceiling_54" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.2 )
+
+[node name="SM_Env_Ceiling_55" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 3.2 )
+
+[node name="SM_Env_Ceiling_57" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 3.2 )
+
+[node name="SM_Env_Ceiling_56" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 15, 3.2 )
+
+[node name="SM_Env_Ceiling_58" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 15, 3.2 )
+
+[node name="SM_Env_Ceiling_59" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 15, 3.2 )
+
+[node name="SM_Env_Ceiling_60" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 20, 3.2 )

@@ -1,0 +1,100 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://RotF/Fly.tscn" type="PackedScene" id=1]
+[ext_resource path="res://RotF/RotFUI.tscn" type="PackedScene" id=2]
+[ext_resource path="res://RotF/Spider.tscn" type="PackedScene" id=3]
+[ext_resource path="res://RotF/Scripts/SpawnSystem.gd" type="Script" id=6]
+[ext_resource path="res://RotF/Scripts/Game.gd" type="Script" id=8]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 1444.22, 682.709 )
+
+[node name="Game" type="Node"]
+script = ExtResource( 8 )
+
+[node name="RotFUI" parent="." instance=ExtResource( 2 )]
+margin_bottom = 76.0
+
+[node name="Fly" parent="." instance=ExtResource( 1 )]
+position = Vector2( 629.356, 358.784 )
+
+[node name="Spider" parent="." instance=ExtResource( 3 )]
+position = Vector2( -129.043, -154.169 )
+
+[node name="SpawnSystem" type="Node2D" parent="."]
+script = ExtResource( 6 )
+
+[node name="Spawn01" type="Node2D" parent="SpawnSystem"]
+position = Vector2( -471.623, 184.242 )
+
+[node name="Spawn02" type="Node2D" parent="SpawnSystem"]
+position = Vector2( -478.607, 326.658 )
+
+[node name="Spawn03" type="Node2D" parent="SpawnSystem"]
+position = Vector2( -480.602, 501.012 )
+
+[node name="Spawn04" type="Node2D" parent="SpawnSystem"]
+position = Vector2( -475.388, 637.684 )
+
+[node name="Spawn05" type="Node2D" parent="SpawnSystem"]
+position = Vector2( -468.014, 787.674 )
+
+[node name="Spawn06" type="Node2D" parent="SpawnSystem"]
+position = Vector2( 2295.67, 893.732 )
+
+[node name="Spawn07" type="Node2D" parent="SpawnSystem"]
+position = Vector2( 2295.67, 748.426 )
+
+[node name="Spawn08" type="Node2D" parent="SpawnSystem"]
+position = Vector2( 2295.67, 629.843 )
+
+[node name="Spawn09" type="Node2D" parent="SpawnSystem"]
+position = Vector2( 2238.27, 245.746 )
+
+[node name="Spawn10" type="Node2D" parent="SpawnSystem"]
+position = Vector2( 2238.27, 119.626 )
+
+[node name="Spawn11" type="Node2D" parent="SpawnSystem"]
+position = Vector2( 362.713, -310.21 )
+
+[node name="Spawn12" type="Node2D" parent="SpawnSystem"]
+position = Vector2( 520.77, -312.043 )
+
+[node name="Spawn14" type="Node2D" parent="SpawnSystem"]
+position = Vector2( 732.354, -310.373 )
+
+[node name="Spawn13" type="Node2D" parent="SpawnSystem"]
+position = Vector2( 937.139, -310.698 )
+
+[node name="Spawn16" type="Node2D" parent="SpawnSystem"]
+position = Vector2( 1158.42, -311.717 )
+
+[node name="Spawn15" type="Node2D" parent="SpawnSystem"]
+position = Vector2( 1390.33, -318.072 )
+
+[node name="Spawn22" type="Node2D" parent="SpawnSystem"]
+position = Vector2( 241.943, 1355.46 )
+
+[node name="Spawn21" type="Node2D" parent="SpawnSystem"]
+position = Vector2( 424.118, 1355.46 )
+
+[node name="Spawn20" type="Node2D" parent="SpawnSystem"]
+position = Vector2( 622.136, 1355.46 )
+
+[node name="Spawn19" type="Node2D" parent="SpawnSystem"]
+position = Vector2( 1392.76, 1329.15 )
+
+[node name="Spawn18" type="Node2D" parent="SpawnSystem"]
+position = Vector2( 1595.95, 1329.15 )
+
+[node name="Spawn17" type="Node2D" parent="SpawnSystem"]
+position = Vector2( 1778.13, 1329.15 )
+
+[node name="GameField" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GameField"]
+position = Vector2( 1391.68, 645.478 )
+shape = SubResource( 1 )
+[connection signal="highscore_changed" from="." to="RotFUI" method="_on_Game_highscore_changed"]
+[connection signal="score_changed" from="." to="RotFUI" method="_on_Game_score_changed"]
+[connection signal="got_hit" from="Fly" to="RotFUI" method="_on_Fly_got_hit"]

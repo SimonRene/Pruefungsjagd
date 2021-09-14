@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/crickets_01.ogg-a53cb11be47c18f65d4e8d3b28facbed.oggstr"
+
+[deps]
+
+source_file="res://Sounds/crickets_01.ogg"
+dest_files=[ "res://.import/crickets_01.ogg-a53cb11be47c18f65d4e8d3b28facbed.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

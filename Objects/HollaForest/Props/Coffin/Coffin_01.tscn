@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Models/HollaForest/HollaHuette/TextureMetarial.material" type="Material" id=1]
+[ext_resource path="res://Models/HollaForest/HollaHuette/Props/Coffin/SM_Prop_Coffin_01.fbx" type="PackedScene" id=2]
+
+[node name="Coffin_01" instance=ExtResource( 2 )]
+
+[node name="SM_Prop_Coffin_02" parent="." index="0"]
+material/0 = ExtResource( 1 )
+
+[node name="SM_Prop_Coffin_Lid_02" parent="SM_Prop_Coffin_02" index="0"]
+material/0 = ExtResource( 1 )

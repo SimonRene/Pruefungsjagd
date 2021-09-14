@@ -1,0 +1,274 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Font/Arial22.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Material/UI_seperator_stylbox.tres" type="StyleBox" id=2]
+[ext_resource path="res://Font/Arial42.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Scripts/Pause_menue.gd" type="Script" id=4]
+[ext_resource path="res://Font/Arial32.tres" type="DynamicFont" id=5]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.172549, 0.172549, 0.172549, 1 )
+
+[node name="Node" type="Node"]
+script = ExtResource( 4 )
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 750.0
+margin_top = 218.0
+margin_right = 1150.0
+margin_bottom = 782.0
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_right = 400.0
+margin_bottom = 48.0
+custom_fonts/font = ExtResource( 3 )
+text = "Pause"
+align = 1
+
+[node name="HSeparator2" type="HSeparator" parent="CenterContainer/VBoxContainer"]
+margin_top = 52.0
+margin_right = 400.0
+margin_bottom = 102.0
+rect_min_size = Vector2( 50, 50 )
+custom_styles/separator = ExtResource( 2 )
+
+[node name="ButtonContinue" type="Button" parent="CenterContainer/VBoxContainer"]
+margin_top = 106.0
+margin_right = 400.0
+margin_bottom = 166.0
+rect_min_size = Vector2( 400, 60 )
+custom_fonts/font = ExtResource( 5 )
+text = "Weiter"
+
+[node name="HSeparator" type="HSeparator" parent="CenterContainer/VBoxContainer"]
+margin_top = 170.0
+margin_right = 400.0
+margin_bottom = 220.0
+rect_min_size = Vector2( 50, 50 )
+custom_styles/separator = ExtResource( 2 )
+
+[node name="ButtonControls" type="Button" parent="CenterContainer/VBoxContainer"]
+margin_top = 224.0
+margin_right = 400.0
+margin_bottom = 284.0
+rect_min_size = Vector2( 400, 60 )
+custom_fonts/font = ExtResource( 5 )
+text = "Steuerung"
+
+[node name="HSeparator6" type="HSeparator" parent="CenterContainer/VBoxContainer"]
+margin_top = 288.0
+margin_right = 400.0
+margin_bottom = 338.0
+rect_min_size = Vector2( 50, 50 )
+custom_styles/separator = ExtResource( 2 )
+
+[node name="ButtonQuit" type="Button" parent="CenterContainer/VBoxContainer"]
+margin_top = 342.0
+margin_right = 400.0
+margin_bottom = 402.0
+rect_min_size = Vector2( 400, 60 )
+custom_fonts/font = ExtResource( 5 )
+text = "Beenden"
+
+[node name="HSeparator3" type="HSeparator" parent="CenterContainer/VBoxContainer"]
+margin_top = 406.0
+margin_right = 400.0
+margin_bottom = 456.0
+rect_min_size = Vector2( 50, 50 )
+custom_styles/separator = ExtResource( 2 )
+
+[node name="HSeparator4" type="HSeparator" parent="CenterContainer/VBoxContainer"]
+margin_top = 460.0
+margin_right = 400.0
+margin_bottom = 510.0
+rect_min_size = Vector2( 50, 50 )
+custom_styles/separator = ExtResource( 2 )
+
+[node name="HSeparator5" type="HSeparator" parent="CenterContainer/VBoxContainer"]
+margin_top = 514.0
+margin_right = 400.0
+margin_bottom = 564.0
+rect_min_size = Vector2( 50, 50 )
+custom_styles/separator = ExtResource( 2 )
+
+[node name="AskExitPanel" type="Panel" parent="CenterContainer"]
+visible = false
+margin_left = 650.0
+margin_top = 300.0
+margin_right = 1250.0
+margin_bottom = 700.0
+rect_min_size = Vector2( 600, 400 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 1 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/AskExitPanel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 20.0
+margin_right = -20.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSeparator" type="HSeparator" parent="CenterContainer/AskExitPanel/VBoxContainer"]
+margin_top = 20.0
+margin_right = 560.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 0, 10 )
+custom_styles/separator = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="CenterContainer/AskExitPanel/VBoxContainer"]
+margin_top = 34.0
+margin_right = 560.0
+margin_bottom = 87.0
+custom_fonts/font = ExtResource( 1 )
+text = "Wirklich beenden?
+Fortschritt geht verloren!"
+align = 1
+
+[node name="HSeparator4" type="HSeparator" parent="CenterContainer/AskExitPanel/VBoxContainer"]
+margin_top = 91.0
+margin_right = 560.0
+margin_bottom = 101.0
+rect_min_size = Vector2( 0, 10 )
+custom_styles/separator = ExtResource( 2 )
+
+[node name="HSeparator2" type="HSeparator" parent="CenterContainer/AskExitPanel/VBoxContainer"]
+margin_top = 105.0
+margin_right = 560.0
+margin_bottom = 109.0
+
+[node name="HSeparator3" type="HSeparator" parent="CenterContainer/AskExitPanel/VBoxContainer"]
+margin_top = 113.0
+margin_right = 560.0
+margin_bottom = 123.0
+rect_min_size = Vector2( 0, 10 )
+custom_styles/separator = ExtResource( 2 )
+
+[node name="ButtonEXIT" type="Button" parent="CenterContainer/AskExitPanel/VBoxContainer"]
+margin_top = 127.0
+margin_right = 560.0
+margin_bottom = 187.0
+rect_min_size = Vector2( 0, 60 )
+custom_fonts/font = ExtResource( 5 )
+text = "Ja"
+
+[node name="HSeparator5" type="HSeparator" parent="CenterContainer/AskExitPanel/VBoxContainer"]
+margin_top = 191.0
+margin_right = 560.0
+margin_bottom = 281.063
+rect_min_size = Vector2( 0, 90.063 )
+custom_styles/separator = ExtResource( 2 )
+
+[node name="ButtonBack" type="Button" parent="CenterContainer/AskExitPanel/VBoxContainer"]
+margin_top = 285.0
+margin_right = 560.0
+margin_bottom = 345.0
+rect_min_size = Vector2( 0, 60 )
+custom_fonts/font = ExtResource( 5 )
+text = "Nein"
+
+[node name="HSeparator6" type="HSeparator" parent="CenterContainer/AskExitPanel/VBoxContainer"]
+margin_top = 349.0
+margin_right = 560.0
+margin_bottom = 379.0
+rect_min_size = Vector2( 0, 30 )
+custom_styles/separator = ExtResource( 2 )
+
+[node name="ControlPanel" type="Panel" parent="CenterContainer"]
+visible = false
+margin_left = 449.0
+margin_top = 99.0
+margin_right = 1449.0
+margin_bottom = 899.0
+rect_min_size = Vector2( 1000, 800 )
+mouse_filter = 1
+custom_styles/panel = SubResource( 1 )
+
+[node name="ButtonBackFromControls" type="Button" parent="CenterContainer/ControlPanel"]
+margin_left = 20.0
+margin_top = 10.178
+margin_right = 220.0
+margin_bottom = 70.229
+rect_min_size = Vector2( 0.812, 60 )
+custom_fonts/font = ExtResource( 1 )
+text = "ESC - Zurück"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/ControlPanel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 20.0
+margin_right = -20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HSeparator" type="HSeparator" parent="CenterContainer/ControlPanel/VBoxContainer"]
+margin_right = 960.0
+margin_bottom = 10.0
+rect_min_size = Vector2( 0, 10 )
+custom_styles/separator = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="CenterContainer/ControlPanel/VBoxContainer"]
+margin_top = 14.0
+margin_right = 960.0
+margin_bottom = 62.0
+custom_fonts/font = ExtResource( 3 )
+text = "Steuerung"
+align = 1
+
+[node name="HSeparator4" type="HSeparator" parent="CenterContainer/ControlPanel/VBoxContainer"]
+margin_top = 66.0
+margin_right = 960.0
+margin_bottom = 76.0
+rect_min_size = Vector2( 0, 10 )
+custom_styles/separator = ExtResource( 2 )
+
+[node name="HSeparator2" type="HSeparator" parent="CenterContainer/ControlPanel/VBoxContainer"]
+margin_top = 80.0
+margin_right = 960.0
+margin_bottom = 84.0
+
+[node name="Label2" type="Label" parent="CenterContainer/ControlPanel/VBoxContainer"]
+margin_top = 88.0
+margin_right = 960.0
+margin_bottom = 421.0
+size_flags_vertical = 2
+custom_fonts/font = ExtResource( 1 )
+text = "W -  Vorwärts bewegen
+A  -  nach links bewegen
+S  -  rückwärts bewegen
+D  -  nach rechts bewegen
+
+Leertaste  -  Springen
+
+E  -  interagieren
+
+Q - Quest Log
+
+ESC - Pause"
+
+[node name="HSeparator6" type="HSeparator" parent="CenterContainer/ControlPanel/VBoxContainer"]
+margin_top = 770.0
+margin_right = 960.0
+margin_bottom = 800.0
+rect_min_size = Vector2( 0, 30 )
+custom_styles/separator = ExtResource( 2 )
+[connection signal="pressed" from="CenterContainer/VBoxContainer/ButtonContinue" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/ButtonControls" to="." method="_on_ButtonControls_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/ButtonQuit" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="CenterContainer/AskExitPanel/VBoxContainer/ButtonEXIT" to="." method="_on_ButtonEXIT_pressed"]
+[connection signal="pressed" from="CenterContainer/AskExitPanel/VBoxContainer/ButtonBack" to="." method="_on_ButtonBack_pressed"]
+[connection signal="pressed" from="CenterContainer/ControlPanel/ButtonBackFromControls" to="." method="_on_ButtonBackFromControls_pressed"]

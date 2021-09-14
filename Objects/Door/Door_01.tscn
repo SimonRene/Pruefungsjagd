@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Objects/Door/Door_metal_Material.tres" type="Material" id=1]
+[ext_resource path="res://Objects/Door/Door_Wood_Material.tres" type="Material" id=2]
+
+[sub_resource type="CubeMesh" id=1]
+
+[sub_resource type="BoxShape" id=2]
+
+[sub_resource type="CubeMesh" id=3]
+
+[node name="Door" type="Spatial"]
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 0.5, 0, 0, 0, 0.95, 0, 0, 0, 0.03, 0.5, 0.95, 0 )
+mesh = SubResource( 1 )
+material/0 = ExtResource( 2 )
+
+[node name="StaticBody" type="StaticBody" parent="MeshInstance"]
+
+[node name="CollisionShape" type="CollisionShape" parent="MeshInstance/StaticBody"]
+shape = SubResource( 2 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="."]
+transform = Transform( 0.0659635, 0, 0, 0, 0.013861, 0, 0, 0, 0.0526195, 0.872441, 1.0116, 0 )
+mesh = SubResource( 3 )
+material/0 = ExtResource( 1 )

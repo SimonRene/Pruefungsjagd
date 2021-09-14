@@ -1,0 +1,290 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://RotF/SpriteSheet/FlyFly.png" type="Texture" id=1]
+[ext_resource path="res://RotF/Scripts/Fly.gd" type="Script" id=2]
+[ext_resource path="res://RotF/SpriteSheet/FlyIdle.png" type="Texture" id=3]
+[ext_resource path="res://RotF/SpriteSheet/FlyStopping.png" type="Texture" id=4]
+[ext_resource path="res://RotF/SpriteSheet/FlyParts/FlyFertig_0003_Ebene-4.png" type="Texture" id=5]
+[ext_resource path="res://RotF/SpriteSheet/FlyParts/FlyFertig_0006_Ebene-7.png" type="Texture" id=6]
+[ext_resource path="res://RotF/SpriteSheet/FlyParts/FlyFertig_0008_Ebene-9.png" type="Texture" id=7]
+[ext_resource path="res://RotF/Sounds/soundWin.wav" type="AudioStream" id=8]
+[ext_resource path="res://RotF/Sounds/soundLoose.wav" type="AudioStream" id=9]
+[ext_resource path="res://RotF/Sounds/ballShoot1.wav" type="AudioStream" id=10]
+[ext_resource path="res://RotF/Sounds/soundBoostA.wav" type="AudioStream" id=11]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Flying"
+length = 1.2
+loop = true
+step = 0.04
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.04, 0.08, 0.12, 0.16, 0.2, 0.24, 0.28, 0.32, 0.36, 0.4, 0.44, 0.48, 0.52, 0.56, 0.6, 0.64, 0.68, 0.72, 0.76, 0.8, 0.84, 0.88, 0.92, 0.96, 1, 1.04, 1.08, 1.12, 1.16 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:offset")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 7 ) ]
+}
+tracks/3/type = "audio"
+tracks/3/path = NodePath("../BoostSound")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 11 )
+}, {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 11 )
+} ],
+"times": PoolRealArray( 0.2, 0.84 )
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "Idle"
+length = 1.2
+loop = true
+step = 0.04
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 3 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.04, 0.08, 0.12, 0.16, 0.2, 0.24, 0.28, 0.32, 0.36, 0.4, 0.44, 0.48, 0.52, 0.56, 0.6, 0.64, 0.68, 0.72, 0.76, 0.8, 0.84, 0.88, 0.92, 0.96, 1, 1.04, 1.08, 1.12, 1.16 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:offset")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 3.8, 0 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "Stopping"
+length = 1.24
+step = 0.04
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 4 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.04, 0.08, 0.12, 0.16, 0.2, 0.24, 0.28, 0.32, 0.36, 0.4, 0.44, 0.48, 0.52, 0.56, 0.6, 0.64, 0.68, 0.72, 0.76, 0.8, 0.84, 0.88, 0.92, 0.96, 1, 1.04, 1.08, 1.12, 1.16 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:offset")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1.96, 7 ) ]
+}
+tracks/3/type = "method"
+tracks/3/path = NodePath("..")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 1.24 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "play_idle"
+} ]
+}
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 35.5792, 28.1129 )
+
+[sub_resource type="ParticlesMaterial" id=5]
+emission_shape = 1
+emission_sphere_radius = 6.88
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 22.99
+angular_velocity = 33.1
+orbit_velocity = 0.02
+orbit_velocity_random = 0.0
+linear_accel = -3.99
+linear_accel_random = 0.13
+radial_accel = 13.8
+angle = 82.8
+angle_random = 0.38
+scale = 3.0
+scale_random = 1.0
+color = Color( 0.466667, 0, 0, 1 )
+hue_variation = 0.08
+hue_variation_random = 1.0
+
+[sub_resource type="ParticlesMaterial" id=6]
+emission_shape = 1
+emission_sphere_radius = 10.83
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 42.25
+initial_velocity_random = 0.27
+angular_velocity = 2.0
+angular_velocity_random = 0.35
+orbit_velocity = 0.2
+orbit_velocity_random = 0.31
+linear_accel = 3.0
+linear_accel_random = 0.3
+radial_accel = 4.0
+radial_accel_random = 0.33
+scale = 0.14
+
+[node name="Fly" type="Area2D" groups=[
+"Player",
+]]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -1.42857, 0 )
+rotation = 1.5708
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, 7 )
+vframes = 30
+frame = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Sprite")
+autoplay = "Idle"
+anims/Flying = SubResource( 1 )
+anims/Idle = SubResource( 2 )
+anims/Stopping = SubResource( 3 )
+
+[node name="Gun" type="Node2D" parent="."]
+position = Vector2( 24.5886, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -3.07355, 0.614716 )
+shape = SubResource( 4 )
+
+[node name="Particles2D4" type="Particles2D" parent="."]
+emitting = false
+amount = 40
+lifetime = 2.0
+one_shot = true
+speed_scale = 1.5
+explosiveness = 0.84
+randomness = 0.57
+process_material = SubResource( 5 )
+
+[node name="Particles2D" type="Particles2D" parent="."]
+emitting = false
+amount = 6
+one_shot = true
+explosiveness = 0.66
+process_material = SubResource( 6 )
+texture = ExtResource( 5 )
+
+[node name="Particles2D2" type="Particles2D" parent="."]
+emitting = false
+amount = 2
+one_shot = true
+explosiveness = 0.66
+process_material = SubResource( 6 )
+texture = ExtResource( 6 )
+
+[node name="Particles2D3" type="Particles2D" parent="."]
+emitting = false
+amount = 1
+one_shot = true
+explosiveness = 0.66
+process_material = SubResource( 6 )
+texture = ExtResource( 7 )
+
+[node name="KillSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+volume_db = -18.0
+
+[node name="WinSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+volume_db = -18.0
+
+[node name="ShootSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+volume_db = -20.0
+
+[node name="BoostSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+volume_db = -26.0

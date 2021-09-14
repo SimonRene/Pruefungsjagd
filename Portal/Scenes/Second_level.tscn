@@ -1,0 +1,131 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Portal/player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Portal/Scenes/Objects/Room.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Portal/portal_exit.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Portal/portal.tscn" type="PackedScene" id=4]
+
+[sub_resource type="CubeMesh" id=1]
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 0.317647, 0.619608, 0.862745, 1 )
+
+[sub_resource type="BoxShape" id=3]
+
+[sub_resource type="CubeMesh" id=4]
+
+[sub_resource type="CubeMesh" id=5]
+
+[sub_resource type="ConcavePolygonShape" id=6]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=7]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[sub_resource type="ConcavePolygonShape" id=8]
+data = PoolVector3Array( -1, 1, 1, 1, 1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, -1, 1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, -1, -1, 1, 1, 1, 1, 1, -1, 1, -1, 1, 1, 1, -1, 1, -1, -1, 1, -1, 1, -1, 1, -1, -1, 1, 1, -1, -1, -1, -1, 1, 1, -1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, 1, 1, 1, -1, -1, 1, 1, -1, 1, -1, 1, 1, -1, -1, -1, 1, 1, -1, 1, -1, -1, -1, 1, -1, 1, 1, -1, -1, -1, -1, -1 )
+
+[node name="Second_level" type="Spatial"]
+
+[node name="player" parent="." groups=[
+"players",
+] instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -53.0143, 0.431744, -31.5084 )
+
+[node name="portal_exit" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.00698, 2.38419e-07, 10.1094 )
+
+[node name="portal" parent="." instance=ExtResource( 4 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -9.9577, 2.38419e-07, -7.03399 )
+portal_exit_path = NodePath("../portal_exit")
+max_recursion = 2
+
+[node name="Spatial" parent="." instance=ExtResource( 2 )]
+
+[node name="Static" type="Spatial" parent="."]
+
+[node name="Floor" type="MeshInstance" parent="Static"]
+transform = Transform( 69.2465, 0, 0, 0, 0.11329, 0, 0, 0, 62.1814, 0, 0, 0 )
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
+
+[node name="StaticBody" type="StaticBody" parent="Static/Floor"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Static/Floor/StaticBody"]
+shape = SubResource( 3 )
+
+[node name="MeshInstance" type="MeshInstance" parent="Static"]
+transform = Transform( 0.771303, 0.603434, -0.202386, -0.636469, 0.731269, -0.245261, 0, 0.317983, 0.948096, -28.7836, 1.89553, -22.6026 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="Spatial2" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -36.6085, 0, -40.1678 )
+
+[node name="portal_exit" parent="Spatial2" instance=ExtResource( 3 )]
+transform = Transform( 0.0765449, 0, -0.997066, 0, 1, 0, 0.997066, 0, 0.0765449, -5.27837, 0, 0.908207 )
+
+[node name="portal" parent="Spatial2" instance=ExtResource( 4 )]
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 0, 0, 0.0571442 )
+portal_exit_path = NodePath("../portal_exit")
+max_recursion = 9
+
+[node name="Gate" type="MeshInstance" parent="Spatial2"]
+transform = Transform( 0.11067, 0, 0, 0, 1.36697, 0, 0, 0, 0.11067, -0.0281181, 1.48394, -1.55671 )
+mesh = SubResource( 5 )
+material/0 = null
+
+[node name="MeshInstance3" type="MeshInstance" parent="Spatial2/Gate"]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -0.0809597, 0, 15.4133, -2.03302e-07, 0, 1.02703, 14.5593 )
+mesh = SubResource( 5 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Spatial2/Gate/MeshInstance3"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Spatial2/Gate/MeshInstance3/StaticBody"]
+shape = SubResource( 6 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="Spatial2/Gate"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 28.9838 )
+mesh = SubResource( 5 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Spatial2/Gate/MeshInstance2"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Spatial2/Gate/MeshInstance2/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="StaticBody" type="StaticBody" parent="Spatial2/Gate"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Spatial2/Gate/StaticBody"]
+shape = SubResource( 8 )
+
+[node name="Gate2" type="MeshInstance" parent="Spatial2"]
+transform = Transform( 0.110674, 0, 0.0084965, 0, 1.367, 0, -0.0084965, 0, 0.110674, -5.42662, 1.484, -0.669544 )
+mesh = SubResource( 5 )
+material/0 = null
+
+[node name="MeshInstance3" type="MeshInstance" parent="Spatial2/Gate2"]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -0.0809597, 0, 15.4133, -2.03302e-07, 0, 1.02703, 14.5593 )
+mesh = SubResource( 5 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Spatial2/Gate2/MeshInstance3"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Spatial2/Gate2/MeshInstance3/StaticBody"]
+shape = SubResource( 6 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="Spatial2/Gate2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 28.9838 )
+mesh = SubResource( 5 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Spatial2/Gate2/MeshInstance2"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Spatial2/Gate2/MeshInstance2/StaticBody"]
+shape = SubResource( 7 )
+
+[node name="StaticBody" type="StaticBody" parent="Spatial2/Gate2"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Spatial2/Gate2/StaticBody"]
+shape = SubResource( 8 )

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Birds_01.ogg-3ea12626425c243dbdf15894db97fc60.oggstr"
+
+[deps]
+
+source_file="res://Sounds/Birds/Birds_01.ogg"
+dest_files=[ "res://.import/Birds_01.ogg-3ea12626425c243dbdf15894db97fc60.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

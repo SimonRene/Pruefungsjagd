@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Models/Adventure/Demo/MAT_PolygonAdventure_01.material" type="Material" id=1]
+[ext_resource path="res://Models/HollaForest/Kabel/Cabel.fbx" type="PackedScene" id=2]
+
+[node name="Cabel" instance=ExtResource( 2 )]
+
+[node name="Cylinder2" parent="." index="0"]
+material/0 = ExtResource( 1 )

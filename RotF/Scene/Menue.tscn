@@ -1,0 +1,135 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://RotF/Scripts/Menue.gd" type="Script" id=1]
+[ext_resource path="res://RotF/new_styleboxflat.tres" type="StyleBox" id=2]
+[ext_resource path="res://Font/HighlandGothicFONT.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Font/Arial22.tres" type="DynamicFont" id=4]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[node name="Menue" type="HBoxContainer"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -150.0
+margin_bottom = 150.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VSeparator2" type="VSeparator" parent="."]
+margin_right = 424.0
+margin_bottom = 300.0
+size_flags_horizontal = 3
+custom_styles/separator = SubResource( 1 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 428.0
+margin_right = 852.0
+margin_bottom = 300.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
+margin_right = 424.0
+margin_bottom = 4.0
+size_flags_vertical = 3
+custom_styles/separator = ExtResource( 2 )
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer"]
+margin_top = 8.0
+margin_right = 424.0
+margin_bottom = 88.0
+rect_min_size = Vector2( 0, 80 )
+
+[node name="Label" type="Label" parent="VBoxContainer/PanelContainer"]
+margin_left = 7.0
+margin_top = 14.0
+margin_right = 417.0
+margin_bottom = 66.0
+custom_fonts/font = ExtResource( 3 )
+text = "Revenge of the Fly"
+align = 1
+valign = 1
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer"]
+margin_top = 92.0
+margin_right = 424.0
+margin_bottom = 152.0
+rect_min_size = Vector2( 0, 60 )
+custom_styles/separator = ExtResource( 2 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 156.0
+margin_right = 424.0
+margin_bottom = 196.0
+size_flags_horizontal = 3
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer"]
+margin_left = 112.0
+margin_right = 312.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 200, 40 )
+custom_fonts/font = ExtResource( 4 )
+text = "Start"
+
+[node name="HSeparator3" type="HSeparator" parent="VBoxContainer"]
+margin_top = 200.0
+margin_right = 424.0
+margin_bottom = 240.0
+rect_min_size = Vector2( 0, 40 )
+custom_styles/separator = ExtResource( 2 )
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 244.0
+margin_right = 424.0
+margin_bottom = 284.0
+size_flags_horizontal = 3
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer2"]
+margin_left = 112.0
+margin_right = 312.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 200, 40 )
+custom_fonts/font = ExtResource( 4 )
+text = "Close Game"
+
+[node name="HSeparator5" type="HSeparator" parent="VBoxContainer"]
+margin_top = 288.0
+margin_right = 424.0
+margin_bottom = 292.0
+size_flags_vertical = 3
+custom_styles/separator = ExtResource( 2 )
+
+[node name="HSeparator4" type="HSeparator" parent="VBoxContainer"]
+margin_top = 296.0
+margin_right = 424.0
+margin_bottom = 300.0
+size_flags_vertical = 3
+custom_styles/separator = ExtResource( 2 )
+
+[node name="VSeparator" type="VSeparator" parent="."]
+margin_left = 856.0
+margin_right = 1280.0
+margin_bottom = 300.0
+size_flags_horizontal = 3
+custom_styles/separator = SubResource( 2 )
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/Button" to="." method="_on_Button_close_pressed"]

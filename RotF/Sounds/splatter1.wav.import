@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/splatter1.wav-1f3b984185bcc5bb6a2d00cb7bd4bdfc.sample"
+
+[deps]
+
+source_file="res://RotF/Sounds/splatter1.wav"
+dest_files=[ "res://.import/splatter1.wav-1f3b984185bcc5bb6a2d00cb7bd4bdfc.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/InteractionArea.gd" type="Script" id=1]
+
+[node name="InteractionArea" type="Area"]
+transform = Transform( 1, 0, 0, 0, 1, 1.42109e-14, 0, 0, 1, 0, -1.19209e-07, -0.651701 )
+script = ExtResource( 1 )
+[connection signal="area_entered" from="." to="." method="_on_InteractionArea_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_InteractionArea_area_exited"]

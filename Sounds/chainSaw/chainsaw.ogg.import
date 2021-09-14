@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/chainsaw.ogg-81d65c234b0e87fe69b0589537309a10.oggstr"
+
+[deps]
+
+source_file="res://Sounds/chainSaw/chainsaw.ogg"
+dest_files=[ "res://.import/chainsaw.ogg-81d65c234b0e87fe69b0589537309a10.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

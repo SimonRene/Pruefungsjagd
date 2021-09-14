@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Models/DozentLevel/TV_Model/Tv_Mat.material" type="Material" id=1]
+[ext_resource path="res://Models/DozentLevel/TV_Model/Screen_Mat_01.material" type="Material" id=2]
+[ext_resource path="res://Models/DozentLevel/TV_Model/TV.fbx" type="PackedScene" id=3]
+
+[node name="TV" instance=ExtResource( 3 )]
+transform = Transform( -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="Cube2" parent="." index="0"]
+transform = Transform( 100, 0, 0, 0, -1.19209e-05, 100, 0, -100, -1.19209e-05, -8.74228e-08, -1, 0 )
+material/0 = ExtResource( 1 )
+material/1 = ExtResource( 2 )

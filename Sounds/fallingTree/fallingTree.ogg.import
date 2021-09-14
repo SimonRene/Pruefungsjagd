@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/fallingTree.ogg-2ef88293e83d629f6318629e0e4cf23b.oggstr"
+
+[deps]
+
+source_file="res://Sounds/fallingTree/fallingTree.ogg"
+dest_files=[ "res://.import/fallingTree.ogg-2ef88293e83d629f6318629e0e4cf23b.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

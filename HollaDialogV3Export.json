@@ -1,0 +1,362 @@
+{
+  "default_conversation": "Node0",
+  "nodes": {
+    "Node0": {
+      "Line0": "Holla die Waldfee",
+      "type": "Conversation"
+    },
+    "Node1": {
+      "Line0": "hollaConditions/talked",
+      "type": "Condition"
+    },
+    "Node10": {
+      "Size": 2,
+      "type": "Mux"
+    },
+    "Node11": {
+      "Line0": "Ich will, dass du für mich etwas erledigst! \nEs ist ein wichtiger Auftrag, den ich aus Zeitgründen nicht erledigen kann.",
+      "Size": 1,
+      "type": "Speech"
+    },
+    "Node12": {
+      "Line0": "Du sollst mir einen Traum erfüllen!",
+      "Size": 1,
+      "type": "Speech"
+    },
+    "Node13": {
+      "Line0": "Meinen Traum vom Highscore!",
+      "Size": 1,
+      "type": "Speech"
+    },
+    "Node14": {
+      "Line0": "Du musst für mich in \"Revenge of the Fly\" einen Highscore erzielen! \nDann erhälst du die Lösungen!",
+      "Size": 1,
+      "type": "Speech"
+    },
+    "Node15": {
+      "Line0": "Und nun setze dich in Bewegung und erledige meine Bitte!",
+      "Size": 1,
+      "type": "Speech"
+    },
+    "Node16": {
+      "Line0": "Abgemacht!",
+      "Line1": "Niemals!",
+      "Size": 2,
+      "type": "Choice"
+    },
+    "Node17": {
+      "Size": 2,
+      "type": "Mux"
+    },
+    "Node18": {
+      "Line0": "Sehr schön! \n Bis bald!",
+      "Line1": "addQuestHighscoreForHolla",
+      "Size": 2,
+      "type": "Speech"
+    },
+    "Node19": {
+      "Line0": "DOCH!",
+      "Size": 1,
+      "type": "Speech"
+    },
+    "Node2": {
+      "Line0": "Hallo und Herzlich Willkommen!",
+      "Line1": "talkedToHolla",
+      "Size": 2,
+      "type": "Speech"
+    },
+    "Node20": {
+      "Line0": "Ok...",
+      "Size": 1,
+      "type": "Choice"
+    },
+    "Node21": {
+      "Line0": "Ja, ist erledigt!",
+      "Line1": "Nein, leider noch nicht...",
+      "Size": 2,
+      "type": "Choice"
+    },
+    "Node22": {
+      "Line0": "hollaConditions/gotHighscore",
+      "type": "Condition"
+    },
+    "Node23": {
+      "Line0": "Was gammelst du dann hier noch rum? \nJetzt aber flott! Erziele für mich den Highscore!",
+      "Line1": "HollaCloseDoor",
+      "Size": 2,
+      "type": "Speech"
+    },
+    "Node24": {
+      "Line0": "Moment... das muss ich überprüfen...",
+      "Size": 1,
+      "type": "Speech"
+    },
+    "Node25": {
+      "Line0": "LÜGE!!! Du kleiner Schlingel! \nDarauf falle ich nicht rein!",
+      "Line1": "HollaCloseDoor",
+      "Size": 2,
+      "type": "Speech"
+    },
+    "Node26": {
+      "Line0": "Sehr schön! \n Du darfst dann wieder gehen. \nSchön dich kennengelernt zu haben.",
+      "Size": 1,
+      "type": "Speech"
+    },
+    "Node27": {
+      "Line0": "Hast du denn nicht etwas vergessen?",
+      "Line1": "Rück die Lösungen sofort raus!!!",
+      "Size": 2,
+      "type": "Choice"
+    },
+    "Node28": {
+      "Line0": "Ach so ja, die Lösungen... \nentschuldige...",
+      "Size": 1,
+      "type": "Speech"
+    },
+    "Node29": {
+      "Line0": "Nanana! Nicht frech werden!",
+      "Size": 1,
+      "type": "Speech"
+    },
+    "Node3": {
+      "Line0": "Ich bin Holla die Waldfee, ich freue mich dich zu sehen! \nWas ist dein Wunsch?",
+      "Size": 1,
+      "type": "Speech"
+    },
+    "Node30": {
+      "Size": 2,
+      "type": "Mux"
+    },
+    "Node31": {
+      "Line0": "Hier sind Sie! \Und Tschüss, ich habe noch was zu erledigen!",
+      "Line1": "giveSolution",
+      "Size": 2,
+      "type": "Speech"
+    },
+    "Node4": {
+      "Line0": "Ich brauche die Lösungen für meine Prüfung morgen.",
+      "Line1": "RÜCK DIE LÖSUNGEN RAUS!!!",
+      "Size": 2,
+      "type": "Choice"
+    },
+    "Node5": {
+      "Line0": "Du schon wieder??? \n Hast du den Highscore schon erzielt?",
+      "Size": 1,
+      "type": "Speech"
+    },
+    "Node6": {
+      "Line0": "Da bist du hier genau richtig! \nIch habe alle Lösungen!",
+      "Size": 1,
+      "type": "Speech"
+    },
+    "Node7": {
+      "Line0": "Aber logischerweise gibt es die nicht ohne Gegenleistung!",
+      "Size": 1,
+      "type": "Speech"
+    },
+    "Node8": {
+      "Line0": "HALT STOP! SCHREI HIER NICHT RUM!",
+      "Size": 1,
+      "type": "Speech"
+    },
+    "Node9": {
+      "Line0": "Dann gibts hier nämlich garnichts! \nErstmal musst DU machen was ICH sage!",
+      "Size": 1,
+      "type": "Speech"
+    }
+  },
+  "sc": {
+    "Node0": {
+      "0": {
+        "to": "Node1",
+        "to_slot": 0
+      }
+    },
+    "Node1": {
+      "0": {
+        "to": "Node5",
+        "to_slot": 0
+      },
+      "1": {
+        "to": "Node2",
+        "to_slot": 0
+      }
+    },
+    "Node10": {
+      "0": {
+        "to": "Node11",
+        "to_slot": 0
+      }
+    },
+    "Node11": {
+      "0": {
+        "to": "Node12",
+        "to_slot": 0
+      }
+    },
+    "Node12": {
+      "0": {
+        "to": "Node13",
+        "to_slot": 0
+      }
+    },
+    "Node13": {
+      "0": {
+        "to": "Node14",
+        "to_slot": 0
+      }
+    },
+    "Node14": {
+      "0": {
+        "to": "Node15",
+        "to_slot": 0
+      }
+    },
+    "Node15": {
+      "0": {
+        "to": "Node16",
+        "to_slot": 0
+      }
+    },
+    "Node16": {
+      "0": {
+        "to": "Node17",
+        "to_slot": 0
+      },
+      "1": {
+        "to": "Node19",
+        "to_slot": 0
+      }
+    },
+    "Node17": {
+      "0": {
+        "to": "Node18",
+        "to_slot": 0
+      }
+    },
+    "Node19": {
+      "0": {
+        "to": "Node20",
+        "to_slot": 0
+      }
+    },
+    "Node2": {
+      "0": {
+        "to": "Node3",
+        "to_slot": 0
+      }
+    },
+    "Node20": {
+      "0": {
+        "to": "Node17",
+        "to_slot": 1
+      }
+    },
+    "Node21": {
+      "0": {
+        "to": "Node24",
+        "to_slot": 0
+      },
+      "1": {
+        "to": "Node23",
+        "to_slot": 0
+      }
+    },
+    "Node22": {
+      "0": {
+        "to": "Node26",
+        "to_slot": 0
+      },
+      "1": {
+        "to": "Node25",
+        "to_slot": 0
+      }
+    },
+    "Node24": {
+      "0": {
+        "to": "Node22",
+        "to_slot": 0
+      }
+    },
+    "Node26": {
+      "0": {
+        "to": "Node27",
+        "to_slot": 0
+      }
+    },
+    "Node27": {
+      "0": {
+        "to": "Node28",
+        "to_slot": 0
+      },
+      "1": {
+        "to": "Node29",
+        "to_slot": 0
+      }
+    },
+    "Node28": {
+      "0": {
+        "to": "Node30",
+        "to_slot": 0
+      }
+    },
+    "Node29": {
+      "0": {
+        "to": "Node30",
+        "to_slot": 1
+      }
+    },
+    "Node3": {
+      "0": {
+        "to": "Node4",
+        "to_slot": 0
+      }
+    },
+    "Node30": {
+      "0": {
+        "to": "Node31",
+        "to_slot": 0
+      }
+    },
+    "Node4": {
+      "0": {
+        "to": "Node6",
+        "to_slot": 0
+      },
+      "1": {
+        "to": "Node8",
+        "to_slot": 0
+      }
+    },
+    "Node5": {
+      "0": {
+        "to": "Node21",
+        "to_slot": 0
+      }
+    },
+    "Node6": {
+      "0": {
+        "to": "Node7",
+        "to_slot": 0
+      }
+    },
+    "Node7": {
+      "0": {
+        "to": "Node10",
+        "to_slot": 0
+      }
+    },
+    "Node8": {
+      "0": {
+        "to": "Node9",
+        "to_slot": 0
+      }
+    },
+    "Node9": {
+      "0": {
+        "to": "Node10",
+        "to_slot": 1
+      }
+    }
+  }
+}

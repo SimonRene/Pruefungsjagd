@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Models/HollaForest/HollaHuette/TextureMetarial.material" type="Material" id=1]
+[ext_resource path="res://Models/HollaForest/HollaHuette/Props/Wheel/SM_Prop_CartWheel_01.fbx" type="PackedScene" id=2]
+
+[sub_resource type="CylinderShape" id=1]
+radius = 0.489495
+height = 0.0932375
+
+[node name="CartWheel_01" instance=ExtResource( 2 )]
+
+[node name="SM_Prop_CartWheel_02" parent="." index="0"]
+material/0 = ExtResource( 1 )
+
+[node name="StaticBody" type="StaticBody" parent="." index="1"]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody" index="0"]
+transform = Transform( -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0, 1, -0.0146681, 0.46452, 0 )
+shape = SubResource( 1 )

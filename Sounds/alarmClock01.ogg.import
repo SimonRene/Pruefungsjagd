@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/alarmClock01.ogg-495667ce435a599b4a9f50793d7375ea.oggstr"
+
+[deps]
+
+source_file="res://Sounds/alarmClock01.ogg"
+dest_files=[ "res://.import/alarmClock01.ogg-495667ce435a599b4a9f50793d7375ea.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

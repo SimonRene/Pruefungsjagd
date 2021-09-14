@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=2]
+
+[sub_resource type="ParticlesMaterial" id=1]
+emission_shape = 1
+emission_sphere_radius = 1.0
+direction = Vector3( -1, 0, 0 )
+spread = 65.19
+gravity = Vector3( 0, 9.8, 0 )
+linear_accel = 4.0
+linear_accel_random = 0.38
+radial_accel = 4.0
+scale = 3.0
+scale_random = 0.79
+color = Color( 0.392157, 0.392157, 0.392157, 0.647059 )
+
+[sub_resource type="SpatialMaterial" id=2]
+flags_transparent = true
+albedo_color = Color( 0.501961, 0.501961, 0.501961, 0.231373 )
+
+[sub_resource type="CapsuleMesh" id=3]
+material = SubResource( 2 )
+radius = 0.11
+mid_height = 0.001
+radial_segments = 6
+rings = 4
+
+[node name="Spatial" type="Spatial"]
+
+[node name="Particles" type="Particles" parent="."]
+amount = 20
+speed_scale = 0.2
+randomness = 0.36
+visibility_aabb = AABB( -1.91079, -4.73614, -2.08218, 3.82157, 9.47227, 4.16436 )
+process_material = SubResource( 1 )
+draw_pass_1 = SubResource( 3 )

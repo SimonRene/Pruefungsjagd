@@ -1,0 +1,221 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Presets/UI/QuestLog/QuestButton.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Presets/UI/QuestLog.gd" type="Script" id=2]
+[ext_resource path="res://Font/HighlandGothicFONT.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Font/Arial12.tres" type="DynamicFont" id=4]
+[ext_resource path="res://Font/Arial.tres" type="DynamicFont" id=5]
+[ext_resource path="res://Sounds/beep_01.ogg" type="AudioStream" id=6]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.294118, 0.294118, 0.294118, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0, 0, 0, 0.27451 )
+
+[node name="QuestLog" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LogView" type="Panel" parent="."]
+visible = false
+anchor_left = 0.1875
+anchor_top = 0.0833333
+anchor_right = 0.8125
+anchor_bottom = 0.916667
+margin_top = 3.8147e-06
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="LogView"]
+anchor_left = 0.0175
+anchor_top = 0.0233333
+anchor_right = 0.9825
+anchor_bottom = 0.976667
+margin_top = -9.53674e-07
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="LogView/ScrollContainer"]
+margin_right = 772.0
+margin_bottom = 572.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 10
+
+[node name="Button" parent="LogView/ScrollContainer/VBoxContainer" instance=ExtResource( 1 )]
+visible = false
+
+[node name="QuestSeparator" type="Panel" parent="LogView/ScrollContainer/VBoxContainer"]
+visible = false
+margin_right = 772.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 0, 20 )
+custom_styles/panel = SubResource( 1 )
+
+[node name="SeparatorTitle" type="Label" parent="LogView/ScrollContainer/VBoxContainer/QuestSeparator"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+custom_fonts/font = ExtResource( 4 )
+text = "Abzugebene Quests"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Button" type="Button" parent="LogView"]
+anchor_left = 1.006
+anchor_top = 0.00291941
+anchor_right = 1.0635
+anchor_bottom = 0.0579194
+margin_left = -6.10352e-05
+margin_right = -16.0001
+margin_bottom = -3.0
+custom_fonts/font = ExtResource( 5 )
+text = "X"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="LogView"]
+anchor_right = 1.0
+margin_top = -61.9025
+margin_bottom = -9.90249
+custom_fonts/font = ExtResource( 3 )
+text = "Quest Log"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="QuestDetailBox" type="PanelContainer" parent="."]
+visible = false
+anchor_left = 0.210938
+anchor_top = 0.125
+anchor_right = 0.789063
+anchor_bottom = 0.875
+margin_left = -20.0
+margin_top = -20.0
+margin_right = 20.0001
+margin_bottom = 20.0
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="QuestDetailBox"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 773.0
+margin_bottom = 573.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CenterBox" type="CenterContainer" parent="QuestDetailBox/VBoxContainer"]
+margin_right = 766.0
+margin_bottom = 60.0
+rect_min_size = Vector2( 0, 60 )
+
+[node name="QuestTitle" type="Label" parent="QuestDetailBox/VBoxContainer/CenterBox"]
+margin_left = 270.0
+margin_top = 4.0
+margin_right = 495.0
+margin_bottom = 56.0
+custom_fonts/font = ExtResource( 3 )
+text = "Quest Title"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="QuestDetailBox/VBoxContainer"]
+margin_top = 64.0
+margin_right = 766.0
+margin_bottom = 566.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="QuestDetailBox/VBoxContainer/ScrollContainer"]
+margin_right = 766.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+
+[node name="PanelContainer" type="PanelContainer" parent="QuestDetailBox/VBoxContainer/ScrollContainer/VBoxContainer"]
+margin_right = 766.0
+margin_bottom = 113.0
+size_flags_horizontal = 3
+
+[node name="QuestDescription" type="Label" parent="QuestDetailBox/VBoxContainer/ScrollContainer/VBoxContainer/PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 759.0
+margin_bottom = 106.0
+custom_fonts/font = ExtResource( 4 )
+text = "Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung Beschreibung"
+autowrap = true
+
+[node name="CloseButton" type="Button" parent="QuestDetailBox"]
+margin_left = 743.0
+margin_top = 7.0
+margin_right = 773.0
+margin_bottom = 37.0
+rect_min_size = Vector2( 30, 30 )
+size_flags_horizontal = 8
+size_flags_vertical = 0
+custom_fonts/font = ExtResource( 5 )
+text = "X"
+
+[node name="NewQuestPanel" type="Panel" parent="."]
+visible = false
+anchor_left = 0.00557308
+anchor_top = 0.0111111
+anchor_right = 0.146979
+anchor_bottom = 0.130556
+custom_styles/panel = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="NewQuestPanel"]
+anchor_left = 0.0263158
+anchor_top = 0.047619
+anchor_right = 0.973684
+anchor_bottom = 0.698413
+custom_fonts/font = ExtResource( 5 )
+text = "Neue Quest
+"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="QuestTitle" type="Label" parent="NewQuestPanel"]
+anchor_left = 0.0220994
+anchor_top = 0.267442
+anchor_right = 0.966851
+anchor_bottom = 0.930233
+custom_fonts/font = ExtResource( 4 )
+text = "Titel"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Timer" type="Timer" parent="NewQuestPanel"]
+wait_time = 5.0
+one_shot = true
+
+[node name="NewQuestAudio" type="AudioStreamPlayer" parent="NewQuestPanel"]
+stream = ExtResource( 6 )
+
+[node name="Timer2" type="Timer" parent="NewQuestPanel"]
+wait_time = 0.2
+one_shot = true
+[connection signal="pressed" from="LogView/Button" to="." method="_on_CloseButton_pressed"]
+[connection signal="pressed" from="QuestDetailBox/CloseButton" to="." method="closeQuestDetails"]
+[connection signal="timeout" from="NewQuestPanel/Timer" to="." method="hide_new_quest_info"]
+[connection signal="timeout" from="NewQuestPanel/Timer2" to="." method="play_new_quest_sound"]

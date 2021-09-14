@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="CapsuleMesh" id=1]
+
+[sub_resource type="CapsuleShape" id=2]
+radius = 0.393649
+height = 1.30952
+
+[node name="HollaDieWaldfee" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.3335, 1.02252, -36.4793 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 0.414, 0, 0, 0, -1.72223e-08, -0.718, 0, 0.394, -3.13848e-08, 0, 0.54607, 0 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0.510641, 0 )
+shape = SubResource( 2 )
